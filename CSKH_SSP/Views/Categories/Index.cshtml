@@ -1,0 +1,236 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    Layout = null;
+}
+@model List<CSKH_SSP.DataModels.Category>
+
+@{
+    var parent = Model.Where(x => x.ParentId == null && x.isActive != false);
+    var child = Model.Where(x => x.ParentId != null && x.isActive != false);
+
+}
+<style>
+    .categorySelected {
+        background-color: #cecece96
+    }
+</style>
+
+<!-- Modal -->
+<div class="modal fade" id="addParentCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm Danh mục</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="card-subtitle">Nhập tên danh mục cha</h6>
+                <div class="form-group mb-0">
+                    <input type="text" class="form-control" name="CategoryName" id="CategoryName" placeholder="Tên danh mục cha">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="addChildCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm Danh mục con</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="card-subtitle">Nhập tên danh mục con</h6>
+                <div class="form-group mb-0">
+                    <input type="text" class="form-control" name="CategoryChildName" id="CategoryChildName" placeholder="Tên danh mục con">
+                </div>
+                <br>
+                  <h6 class="card-subtitle">Deadline Response  (giờ)</h6>
+                <div class="form-group mb-0">
+                    <input type="number" value="16" class="form-control" name="hoursDeadline" id="hoursDeadline" >
+                </div>
+                   <br>
+                <h6 class="card-subtitle">Deadline Resolve (giờ)</h6>
+                <div class="form-group mb-0">
+                    <input type="number" value="16" class="form-control" name="HoursResolve" id="HoursResolve" >
+                </div>
+
+
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="submitFormChildCategory()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="media-body" style="display: flex;min-width: 0;margin-left: -5px !important;margin-right: 10px !important;">
+    <div class="col-12" style="padding-right: 0px !important">
+        <button class="btn btn-link" type="button" data-toggle="modal" data-target="#addParentCategory">
+            <i class="feather icon-calendar mr-2"></i>Thêm danh mục cha
+        </button>
+    </div>
+</div>
+
+@foreach (var item in parent)
+{
+    <div class="media-body" style="display: flex;min-width: 0;margin-left: -5px !important;margin-right: 10px !important;">
+        <div class="col-12" style="padding-right: 0px !important">
+            <div class="accordion accordion-outline" id="@item.IDCategory">
+                <div class="card">
+                    <div class="card-header" id="headingTwooutline">
+                        <div class="mb-0 p-2" style="display: flex;  justify-content: space-between;">
+                            <button  onclick="loadCategoryDetail('@item.IDCategory')" style="color :black" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#pr-@item.IDCategory" aria-expanded="false"
+                                aria-controls="collapseTwooutline">
+                                <i class="feather icon-calendar mr-2"></i>@item.CategoryName
+                            </button>
+                            <a onclick="removeCategory('@item.IDCategory')" class="btn btn-link collapsed">
+                                Xóa
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pr-@item.IDCategory" class="collapse" aria-labelledby="headingTwooutline" data-parent="#@item.IDCategory">
+                        <div class="card-body" style="padding: 1.25rem 0">
+                            <div class="media border-bottom border-top border-gray" style="cursor: pointer;">
+                                <div class="media-body m-3" style="display: flex;min-width: 0;margin-left: -5px !important;margin-right: 10px !important;">
+                                    <div class="col-12" style="padding-right: 0px !important;display: flex ; justify-content: center;">
+                                        <div style="display: flex; min-width: 0">
+                                            <div @*class="wrapText"*@ style="margin-top: 4px;">
+                                                <button class="btn btn-link" type="button" onclick="setCurrentCategoryParent('@item.IDCategory')" data-toggle="modal" data-target="#addChildCategory">
+                                                    <i class="feather icon-calendar mr-2"></i>Thêm danh mục con
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            @foreach (var i in child)
+                            {
+                                if (i.ParentId == item.IDCategory)
+                                {
+                                    <div class="media border-bottom border-top border-gray categoryCard" id="categoryChild-@i.IDCategory" style="cursor: pointer;"
+                             onclick="loadCategoryDetail('@i.IDCategory')">
+
+                                        <div class="media-body m-3" style="display: flex;min-width: 0;margin-left: -5px !important;margin-right: 10px !important;">
+                                            <div class="col-12" style="padding-right: 0px !important;display: flex ; justify-content: space-between;">
+
+                                                <div style="display: flex; min-width: 0">
+                                                    <div @*class="wrapText"*@ style="margin-top: 4px">
+                                                        <a class="alert-link">@i.CategoryName </a>
+                                                    </div>
+                                                </div>
+                                                <strong class="float-right mt-0" style="font-size: 14px">
+                                                    <a onclick="removeCategory('@i.IDCategory')" class="btn btn-link collapsed">
+                                                        Xóa
+                                                    </a>
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+                    $(document).ready(function () {
+                $('.categoryCard').click(function () {
+                    $('.categoryCard').removeClass('categorySelected');
+                    $(this).addClass('categorySelected');
+                });
+
+            });
+
+            var idCategoryParent = "";
+
+            function setCurrentCategoryParent(id){
+                idCategoryParent = id;
+            }
+
+             function submitForm() {
+                var v = $("#CategoryName").val();
+                $.post("@Url.Action("AddParentCategory", "Categories")",
+                        {
+                            CategoryName: v
+                        },
+                        function (data, status) {
+                            if (data == "1") {
+                                 alert("Thêm thành công")
+                                  $(".close").click();
+                                  $('.modal-backdrop').remove();
+                                loadCategory()
+                            } else {
+                                alert("Lỗi");
+                                $(".close").click();
+                                $('.modal-backdrop').remove();
+                            }
+                        });
+        };
+
+        function submitFormChildCategory() {
+                var v = $("#CategoryChildName").val();
+                var pr = idCategoryParent;
+                var hour = $("#hoursDeadline").val();
+
+                
+                $.post("@Url.Action("AddParentCategory", "Categories")",
+                        {
+                            ParentId : pr,
+                            CategoryName: v,
+                            HoursDeadline : hour,
+                        },
+                        function (data, status) {
+                            if (data == "1") {
+                                 alert("Thêm thành công")
+                                  $(".close").click();
+                                  $('.modal-backdrop').remove();
+                                loadCategory();
+                                idCategoryParent = "";
+                            } else {
+                                alert("Lỗi");
+                                $(".close").click();
+                                $('.modal-backdrop').remove();
+                            }
+                        });
+        };
+
+        function removeCategory(id) {
+
+                $.post("@Url.Action("RemoveCategory", "Categories")",
+                        {
+                            Id: id
+                        },
+                        function (data, status) {
+                            if (data == "1") {
+                                 alert("Xóa thành công")
+                                  $(".close").click();
+                                  $('.modal-backdrop').remove();
+                                loadCategory()
+                            } else {
+                                alert("Lỗi");
+                                $(".close").click();
+                                $('.modal-backdrop').remove();
+                            }
+                        });
+        };
+
+    </script>
+} 

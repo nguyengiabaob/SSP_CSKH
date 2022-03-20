@@ -1,0 +1,1012 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      lang="en">
+<head>
+    <link href="~/assets/css/themify-icons.css" rel="stylesheet" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Orbiter is a bootstrap minimal &amp; clean admin template">
+    <meta name="keywords"
+          content="admin, admin panel, admin template, admin dashboard, responsive, bootstrap 4, ui kits, ecommerce, web app, crm, cms, html, sass support, scss">
+    <meta name="author" content="Themesbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>VNTT - Ticket Support System</title>
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="https://vntt.com.vn/img/logo.ico">
+    <!-- Start css -->
+    <!-- Switchery css -->
+    <link href="~/assets/css/animate.min.css" rel="stylesheet" />
+    <link href="~/assets/css/BonusStyle.css" rel="stylesheet" />
+    @*<link href="~/assets/css/switchery.css" rel="stylesheet">*@
+    <link href="~/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="~/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/flag-icon.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <style type="text/css" id="dark-mode-custom-style"></style>
+    <link href="~/assets/css/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/assets/css/datepicker.min.css" rel="stylesheet" />
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="~/assets/css/toastr.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@@babel/standalone/babel.min.js"></script>
+
+
+    <link href="~/assets/css/select2.css" rel="stylesheet" />
+    <style>
+        @@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+    <style>
+        /* width */
+        #ListRequest::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        #ListRequest::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        #ListRequest::-webkit-scrollbar-thumb {
+            background: #d7d7d9;
+        }
+
+            /* Handle on hover */
+            #ListRequest::-webkit-scrollbar-thumb:hover {
+                background: #c9c9c9;
+            }
+
+        #navigationbar::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        navigationbar::-webkit-scrollbar {
+            width: 12px;
+            background-color: #F5F5F5;
+        }
+
+        navigationbar::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #555;
+        }
+
+        .datepicker {
+            z-index: 1600 !important;
+        }
+
+        li.active {
+            color: red;
+        }
+
+        .notificationIsRead {
+            color: #cacaca !important;
+        }
+
+        .dropdown-toggle::after {
+            content: none;
+        }
+        /* has to be larger than 1050 */
+    </style>
+    <!-- End css -->
+</head>
+
+<body class="vertical-layout" onload="disableLoading()">
+    <div class="modalLoading" id="modalLoading" style=" justify-content: center; align-items: center;">
+        <div>
+            <button class="btn btn-primary" type="button" disabled="">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+        </div>
+    </div>
+    <!-- Start Infobar Setting Sidebar -->
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <!-- End Infobar Setting Sidebar -->
+    <!-- Start Containerbar -->
+    <div id="containerbar">
+        <!-- Start Leftbar -->
+        <div class="leftbar">
+            <!-- Start Sidebar -->
+            <div class="sidebar">
+                <!-- Start Logobar -->
+                <div class="logobar">
+                    <a href="@Url.Action("Index","Home")"
+                       class="logo logo-large"><img src="~/assets/img/logo1.png" class="img-fluid" alt="logo"></a>
+                    <a href="@Url.Action("Index","Home")"
+                       class="logo logo-small"><img src="~/assets/img/logo1.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <!-- End Logobar -->
+                <!-- Start Navigationbar -->
+
+                <ul class="vertical-menu in countnum" style="margin-bottom: 30px">
+                    <li class="active-li" style="cursor: pointer;">
+                        <a onclick="NewRequest('')" class="statusActive" id="CreateNewRequest">
+                            <img src="~/assets/svg/basic.svg" class="img-fluid" alt="widgets"><span>
+                                Thêm yêu cầu
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active-li" style="cursor: pointer;">
+                        <a onclick="loadQuestion()" class="statusActive" id="CommonQuestion">
+                            <img src="~/assets/svg/basic.svg" class="img-fluid" alt="widgets"><span>
+                               Câu hỏi thường gặp
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="navigationbar active" id="navigationbar">
+                    <ul class="vertical-menu in countnum">
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('Open')" class="statusActive" id="Open">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Đang
+                                    chờ
+                                </span><span class="badge badge-primary pull-right" id="CountOpen"></span>
+                            </a>
+                        </li>
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('Processing')" class="statusActive" id="Processing">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Đang xử
+                                    lý
+                                </span><span class="badge badge-primary pull-right" id="CountProcessing"></span>
+                            </a>
+                        </li>
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('Done')" class="statusActive" id="Done">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Đã hoàn tất
+                                </span><span class="badge badge-primary pull-right" id="CountDone"></span>
+                            </a>
+                        </li>
+
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('Reject')" class="statusActive" id="Reject">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Từ chối
+                                </span><span class="badge badge-primary pull-right" id="CountReject"></span>
+                            </a>
+                        </li>
+
+
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('MyNotification')" class="statusActive" id="mention">
+                                <img src="~/assets/svg/notifications.svg" class="img-fluid" alt="widgets" id="animationBell"><span>
+                                    Thông báo
+                                </span><span class="badge badge-primary pull-right" id="CountMention"></span>
+                            </a>
+                        </li>
+
+                        <li style="margin-top: 30px"></li>
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('incident')" class="statusActive" id="incident">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Incident
+                                </span>
+                            </a>
+                        </li>
+
+                        <li style="margin-top: 30px"></li>
+                        
+
+
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('Closed')" class="statusActive" id="Closed">
+                                <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets"><span>
+                                    Xác nhận hoàn tất
+                                </span><span class="badge badge-primary pull-right" id="CountClosed"></span>
+                            </a>
+                        </li>
+                        <li class="active-li" style="cursor: pointer">
+                            <a onclick="loadListRequestByStatus('MyPinned')" class="statusActive" id="Pinned">
+
+                                <img src="~/assets/svg/pin2.svg" class="img-fluid" alt="widgets"><span>
+                                    Đã ghim
+                                </span><span class="badge badge-primary pull-right" id="CountPinned"></span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 30px"></li>
+                        @if (ViewBag.GroupUserID != 3)
+                        {
+                            <li class="active-li" style="cursor: pointer;">
+                                <a data-toggle="modal" data-target="#StatisticalModal" onclick="LoadStatisticalModal()" class="statusActive" id="">
+                                    <span class="img-fluid" style="filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg)">
+                                        <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-12-28-020759/theme/html/demo1/dist/../src/media/svg/icons/Shopping/Chart-pie.svg-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24" />
+                                                <path d="M4.00246329,12.2004927 L13,14 L13,4.06189375 C16.9463116,4.55399184 20,7.92038235 20,12 C20,16.418278 16.418278,20 12,20 C7.64874861,20 4.10886412,16.5261253 4.00246329,12.2004927 Z" fill="#000000" opacity="0.3" />
+                                                <path d="M3.0603968,10.0120794 C3.54712466,6.05992157 6.91622084,3 11,3 L11,11.6 L3.0603968,10.0120794 Z" fill="#000000" />
+                                            </g>
+                                        </svg><!--end::Svg Icon-->
+                                </span><span class="ml-1">
+                                        Thống kê
+                                    </span>
+                                </a>
+                            </li>
+                        }
+                        @if (ViewBag.GroupUserID != 3)
+                        {
+                            <li class="active-li" style="cursor: pointer;">
+                                <a onclick="loadCategory()" class="statusActive" id="whoIsOnline">
+                                    <img src="~/assets/svg/form_elements.svg" class="img-fluid" alt="widgets" id=""><span>
+                                       Quản lý danh mục
+                                    </span>
+                                </a>
+                            </li>
+                        }
+                        @*<li class="active-li" style="cursor: pointer;">
+                            <a data-toggle="modal" data-target="#FilterModal" onclick="LoadFilterModalBody()" class="statusActive" id="">
+                            <span class="img-fluid" style="filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg)">
+                            begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-12-28-020759/theme/html/demo1/dist/../src/media/svg/icons/Text/Filter.svg<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path d="M5,4 L19,4 C19.2761424,4 19.5,4.22385763 19.5,4.5 C19.5,4.60818511 19.4649111,4.71345191 19.4,4.8 L14,12 L14,20.190983 C14,20.4671254 13.7761424,20.690983 13.5,20.690983 C13.4223775,20.690983 13.3458209,20.6729105 13.2763932,20.6381966 L10,19 L10,12 L4.6,4.8 C4.43431458,4.5790861 4.4790861,4.26568542 4.7,4.1 C4.78654809,4.03508894 4.89181489,4 5,4 Z" fill="#000000" />
+                            </g>
+                            </svg>end::Svg Icon
+                            </span><span class="ml-1">
+                            Bộ lọc
+                            </span>
+                            </a>
+                            </li>*@
+                    </ul>
+                    <div class="border-top border-gray" style="width: 100%;position: absolute;bottom: 0px;background-color: hsl(218deg 68% 23% / 50%);display: flex;border-top: 1px solid rgb(255 0 0 / 3%);">
+                        <div class="col-8">
+
+                            <div class="dropdown p-2" style="width: 30%; left: -5px">
+                                <a class="dropdown-toggle" href="#" role="button" id="profilelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="/assets/svg/user.svg" class="img-fluid" alt="widgets" id="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-118px, 23px, 0px);">
+                                    <div class="dropdown-item">
+                                        <div class="profilename">
+                                            <h5>@ViewBag.Username</h5>
+                                        </div>
+                                    </div>
+                                    <div class="userbox">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="media dropdown-item">
+                                                <a href="#" class="profile-icon">
+                                                    <img src="/assets/svg/user.svg" class="img-fluid" alt="user">Đổi mật khẩu
+                                                </a>
+                                            </li>
+                                            <li class="media dropdown-item">
+                                                <a href="/LogOut/LogOut" class="profile-icon">
+                                                    <img src="/assets/svg/logout.svg" class="img-fluid" alt="logout">Đăng xuất
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*<img src="/assets/svg/profile.svg"  style="max-width: 25%" alt="profile">*@
+                        </div>
+                        @if (ViewBag.GroupUserID == 1)
+                        {
+                            <div class="col-4 text-right" style="align-self: center;">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="profilelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <img src="/assets/svg/settings.svg" class="img-fluid" style="max-width: 40%">
+                                        @*<img style="filter: brightness(0) invert(1);cursor: pointer;" src="~/assets/svg/settings.svg" class="img-fluid icon-svg float-right" alt="settings">*@
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-118px, 23px, 0px);">
+                                        <div class="dropdown-item">
+                                            <div class="profilename">
+                                                <h5>Admin Control Panel</h5>
+                                            </div>
+                                        </div>
+                                        <div class="userbox">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="media dropdown-item">
+                                                    <a href="#" class="profile-icon" data-toggle="modal" data-target="#AddCategoryModal" onclick="loadAddCategoryBody()">
+                                                        <img src="/assets/svg/form_elements.svg" class="img-fluid" alt="user">Thêm danh mục
+                                                    </a>
+                                                </li>
+                                                <li class="media dropdown-item" onclick="UserPermission()">
+                                                    <a href="#" class="profile-icon">
+                                                        <img src="/assets/svg/form_elements.svg" class="img-fluid" alt="logout">Phân quyền
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+                <!-- End Navigationbar -->
+            </div>
+            <!-- End Sidebar -->
+        </div>
+        <!-- End Leftbar -->
+        <!-- Start Rightbar -->
+        <div class="rightbar" style="height: 100vh">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="@Url.Action("Index","Home")"
+                               class="mobile-logo"><img src="~/assets/img/logo1.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="~/assets/svg/horizontal.svg"
+                                                 class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="~/assets/svg/verticle.svg" class="img-fluid menu-hamburger-vertical"
+                                                 alt="verticle">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="~/assets/svg/collapse.svg" class="img-fluid menu-hamburger-collapse"
+                                                 alt="collapse">
+                                            <img src="~/assets/svg/close.svg" class="img-fluid menu-hamburger-close"
+                                                 alt="close">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Content -->
+            @*<div class="margin-body-content">
+                </div>*@
+            <div class="contentbar" id="contentbar" style="padding: 0px">
+                <!-- Start modal -->
+                <div class="modal fade" id="FilterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Bộ lọc</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="FilterModalBody">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="StatisticalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Thống kê</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="StatisticalModalModalBody">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="AddCategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Thêm danh mục</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="AddCategoryModalBody">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="UserPermission" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Phân quyền người dùng: </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="UserPermissionModalBody">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End modal -->
+                <!-- Start row -->
+                <div style="display: flex; flex-wrap: wrap">
+                    @RenderBody()
+                </div>
+
+                <!-- End row -->
+            </div>
+
+            <!-- End Content -->
+            <!-- Start Footerbar -->
+            @*<div class="footerbar">
+                <footer class="footer">
+                <p class="mb-0">© 2020 <a href="#">R&D Team</a> - All Rights Reserved.</p>
+                </footer>
+                </div>*@
+            <!-- End Footerbar -->
+        </div>
+        <!-- End Rightbar -->
+    </div>
+    <!-- End Containerbar -->
+    <!-- Start js -->
+    <script src="~/assets/js/redux.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/assets/js/jquery_002.js"></script>
+    <script src="~/assets/js/responsive.js"></script>
+    <script src="~/assets/js/ckeditor/ckeditor.js"></script>
+    <script src="~/assets/js/popper.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/select2.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="~/assets/js/toastr.min.js"></script>
+    <script src="~/assets/js/flyToElement.js"></script>
+    @*<script src="~/assets/js/bootstrap.js"></script>*@
+    <script src="~/assets/js/modernizr.js"></script>
+    <script src="~/assets/js/detect.js"></script>
+    <script src="~/assets/js/jquery.js"></script>
+    <script src="~/assets/js/vertical-menu.js"></script>
+    @*<script src="~/assets/js/ckeditor/ckeditor.js"></script>*@
+    <!-- Switchery js -->
+    @*<script src="~/assets/js/switchery.js"></script>*@
+    <!-- Core js -->
+    <script src="~/assets/js/core.js"></script>
+    <script src="~/assets/js/datepicker.min.js"></script>
+    <script src="~/assets/js/datepicker.en.js"></script>
+    <script src="~/assets/js/custom-form-datepicker.js"></script>
+    @*<script src="~/assets/js/ckeditor/ckeditor.js"></script>*@
+    <script src="~/assets/js/sweetalert2.min.js"></script>
+    <script src="~/assets/js/custom-sweet-alert.js"></script>
+    <script src="~/assets/js/CountRequestStatus.js"></script>
+    <script>
+        var CurrentUserID = @ViewBag.UserID;
+    </script>
+    <script src="~/assets/js/whoIsOnline.js"></script>
+    <script>
+        //console.log();
+        var requestActive = "";
+        var numberRequestToShow = 18;
+        var statusActive = "";
+        var categoryActive = "";
+        var priorityActive = "";
+        var textSearch = "";
+
+
+
+        $(document).ready(function () {
+            $('.active-li').click(function () {
+                $('.active-li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
+
+        if ('@ViewBag.addRequestFromTicket' != "") {
+            NewRequest('@ViewBag.addRequestFromTicket');
+        }
+        if ('@ViewBag.Mynotification' == "MyNotification") {
+            window.history.pushState("", "", "Index");
+            loadListRequestByStatus('MyNotification');
+        }
+
+        function NewRequest(ticketID) {
+            $('#danhSachYeuCauTitle >.col-5 >.card-title.mb-0 ').text('Danh sách yêu cầu');
+            $("#RequestContent").empty();
+            $("#RequestContent").load("/AddNewRequest/Index?ticketid=" + ticketID + "&isGetDataOnly=true",
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    window.history.pushState("", "", "Index");
+                });
+            $(window).resize(function () {
+                if ($(window).width() < 992) {
+                    $(".ListRequest").css('display', 'none');
+                    $("#backBtn").show();
+
+                } else {
+                    $(".ListRequest").show();
+                    $("#backBtn").css('display', 'none');
+
+                }
+            });
+            if ($(window).width() < 992) {
+                $(".ListRequest").css('display', 'none');
+                $("#backBtn").show();
+            } else {
+                $(".ListRequest").show();
+                $("#backBtn").css('display', 'none');
+            }
+
+
+        }
+        function commonQuestion(ticketID) {
+            if ($('#ListRequest > #statusListRequest').length > 0) {
+                $('#ListRequest > #statusListRequest > .text-center.mt-3.mb-5> h6').text('không có câu hỏi')
+            }
+
+            $("#RequestContent").empty();
+            $("#RequestContent").load("/CommonQuestion/Index?Questionid=" + ticketID + "&isGetDataOnly=true",
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    window.history.pushState("", "", "Index");
+                });
+            //$(window).resize(function () {
+            //    if ($(window).width() < 992) {
+            //        $(".ListRequest").css('display', 'none');
+            //        $("#backBtn").show();
+
+            //    } else {
+            //        $(".ListRequest").show();
+            //        $("#backBtn").css('display', 'none');
+
+            //    }
+            //});
+            //if ($(window).width() < 992) {
+            //    $(".ListRequest").css('display', 'none');
+            //    $("#backBtn").show();
+            //} else {
+            //    $(".ListRequest").show();
+            //    $("#backBtn").css('display', 'none');
+            //}
+
+
+        }
+        function UserPermission() {
+            $("#RequestContent").empty();
+            $("#RequestContent").load("/UserPermission",
+                function (responseText, textSstatus, XMLHttpRequest) {
+
+                });
+        }
+
+        function activeStatus(status) {
+            $(".countnum li").removeClass("active");
+            $("#" + status).parent().addClass("active");
+        }
+
+        function LoadStatisticalModal() {
+            $("#StatisticalModalModalBody").load("@Url.Action("StatisticalModal", "ModalContent")");
+        }
+
+        function loadMore() {
+            numberRequestToShow += 18;
+            loadListRequest(statusActive, '@ViewData["text"]', categoryActive, priorityActive, numberRequestToShow, 1);
+        }
+
+        function searchRequest() {
+            loadListRequest(statusActive, $("#searchRequestInput").val(), categoryActive, priorityActive, numberRequestToShow, 1);
+        }
+        function searchQuestion() {
+            loadQuestion($("#searchRequestInput").val(), categoryActive, priorityActive, numberRequestToShow, 1);
+        }
+        function loadListRequest(status, text, category, pri, pageNumber, isScroll) {
+            $(".ListRequest").show();
+            $("#userStatus").addClass("hideElement").removeClass("animate__animated animate__slideInUp");
+            $("#danhSachYeuCauTitle").removeClass("hideElement").addClass("animate__animated animate__slideInUp");
+            $("#loadMoreBtn").removeClass("hideElement").addClass("animate__animated animate__slideInUp");
+            if (text == null || text === 'undefined') {
+                text = "";
+            }
+            statusActive = status;
+            categoryActive = category;
+            priorityActive = pri;
+            $("#loadingListRequest").removeClass("hideElement");
+            $("#ListRequest").addClass("blurContent");
+            loadCountRequestStatus();
+            $("#ListRequest").empty();
+            var url = encodeURI("/RequestList/Index?statusRequest=" + status + "&text=" + text + "&category=" + category + "&pri=" + pri + "&pageNumber=" + pageNumber + "&isGetData=true");
+            $("#ListRequest").load(url,
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        $("#ListRequest").removeClass("blurContent");
+                        $("#loadingListRequest").addClass("hideElement");
+                        if (requestActive != "" && $("#Req-" + requestActive).length > 0) {
+                            //console.log("asdasd");
+                            $('.RequestCard').removeClass('activeRequest');
+                            $("#Req-" + requestActive).addClass('activeRequest');
+                        }
+                        if (isScroll) {
+                            var objDiv = document.getElementById("ListRequest");
+                            objDiv.scrollTop = objDiv.scrollHeight;
+                        }
+                        if ($(window).width() < 768) {
+                            $("#ListRequest").css('padding-bottom', '120px');
+                        } else {
+                            $("#ListRequest").css('padding-bottom', '20px');
+
+                        }
+
+                        //console.log("/RequestList/Index?statusRequest=" + status + "&text=" + text + "&category=" + category + "&pri=" + pri + "&pageNumber=" + pageNumber);
+                    }
+                    if (textSstatus == "error") {
+                        console.log("");
+                    }
+                });
+            //Url.Action("Index","RequestList", new {statusRequest = "Closed"})
+            //$("#ListRequest").load("/RequestList/Index?statusRequest=" + status);
+        }
+        function RemoveQuestion(QuestionId) {
+             $.post("@Url.Action("RemoveQuestion", "CommonQuestion")",
+                        {
+                            QuestionId: QuestionId
+                        },
+                        function (data, status) {
+                            if (data == "1") {
+                                alert("Xóa thành công")
+                              
+                                  $(".close").click();
+                                $('.modal-backdrop').remove();
+                                $('#RequestContent').empty();
+                                loadQuestion();
+                                
+                            } else {
+                                alert("Lỗi");
+                                $(".close").click();
+                                $('.modal-backdrop').remove();
+                            }
+                        });
+        }
+        function loadQuestion(text, category, pri, pageNumber, isScroll) {
+            $('#danhSachYeuCauTitle >.col-5 >.card-title.mb-0 ').text('Danh sách câu hỏi');
+            $('#searchRequestInput').change(function () {
+                searchQuestion();
+            })
+            $('#searchRequestInputBtn').click(function () {
+                searchQuestion();
+            })
+            console.log($('#searchRequestInput'))
+            $(".ListRequest").show();
+            $("#userStatus").addClass("hideElement").removeClass("animate__animated animate__slideInUp");
+            $("#danhSachYeuCauTitle").removeClass("hideElement").addClass("animate__animated animate__slideInUp");
+            $("#loadMoreBtn").addClass("hideElement").removeClass("animate__animated animate__slideInUp");
+            if (text == null || text === 'undefined') {
+                text = "";
+            }
+            $("#loadingListRequest").removeClass("hideElement");
+            $("#ListRequest").addClass("blurContent");
+            $("#ListRequest").empty();
+            var url = encodeURI("/CommonQuestion/QuestionList?text=" + text + "&category=" + category + "&pri=" + pri + "&pageNumber=" + pageNumber + "&isGetData=true");
+            $("#ListRequest").load(url,
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        console.log()
+                        $("#ListRequest").removeClass("blurContent");
+                        $("#loadingListRequest").addClass("hideElement");
+                        if (requestActive != "" && $("#Req-" + requestActive).length > 0) {
+                            //console.log("asdasd");
+                            $('.RequestCard').removeClass('activeRequest');
+                            $("#Req-" + requestActive).addClass('activeRequest');
+                        }
+                        if (isScroll) {
+                            var objDiv = document.getElementById("ListRequest");
+                            objDiv.scrollTop = objDiv.scrollHeight;
+                        }
+                        if ($(window).width() < 768) {
+                            $("#ListRequest").css('padding-bottom', '120px');
+                        } else {
+                            $("#ListRequest").css('padding-bottom', '20px');
+
+                        }
+
+                        //console.log("/RequestList/Index?statusRequest=" + status + "&text=" + text + "&category=" + category + "&pri=" + pri + "&pageNumber=" + pageNumber);
+                    }
+                    if (textSstatus == "error") {
+                        console.log("");
+                    }
+                });
+        }
+        function loadListRequestByStatus(status) {
+            $('#danhSachYeuCauTitle >.col-5 >.card-title.mb-0 ').text('Danh sách yêu cầu');
+            $('#searchRequestInput').change(function () {
+                searchRequest();
+            })
+            $('#searchRequestInputBtn').click(function () {
+                searchRequest
+            })
+            loadListRequest(status);
+            numberRequestToShow = 18;
+
+        }
+
+        function loadCategory() {
+            $('#danhSachYeuCauTitle >.col-5 >.card-title.mb-0 ').text('Danh sách yêu cầu');
+            $('#searchRequestInput').change(function () {
+                searchRequest();
+            })
+            $('#searchRequestInputBtn').click(function () {
+                searchRequest
+            })
+            $("#userStatus").removeClass("hideElement").addClass("animate__animated animate__slideInUp");
+            $("#loadingListRequest").removeClass("hideElement");
+            $("#ListRequest").addClass("blurContent");
+            $("#danhSachYeuCauTitle").addClass("hideElement").removeClass("animate__animated animate__slideInUp");
+            $("#loadMoreBtn").addClass("hideElement").removeClass("animate__animated animate__slideInUp");
+            loadCountRequestStatus();
+            $("#ListRequest").empty();
+            $("#ListRequest").load("/Categories/Index",
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        $("#ListRequest").removeClass("blurContent");
+                        $("#loadingListRequest").addClass("hideElement");
+                    }
+                    if (textSstatus == "error") {
+                        console.log("");
+                    }
+                });
+
+        }
+
+        function loadTaskOfUserID(userID) {
+            $("#RequestContent").empty();
+            $("#loadingRequestContent").removeClass("hideElement");
+            $('.whoIsOnlineCard').removeClass('activeRequest');
+            $("#UserID-" + userID).addClass('activeRequest');
+            $("#RequestContent").load("/Statistic/taskOfUserId?UserId=" + userID,
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        $("#loadingRequestContent").addClass("hideElement");
+                    }
+                    if (textSstatus == "error") {
+                        alert("");
+                    }
+                });
+        }
+
+        function loadCategoryDetail(Id) {
+            $("#RequestContent").empty();
+            $("#loadingRequestContent").removeClass("hideElement");
+            //$('.whoIsOnlineCard').removeClass('activeRequest');
+            //$("#UserID-" + userID).addClass('activeRequest');
+            $("#RequestContent").load("/Categories/CategoryDetails?Id=" + Id,
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        $("#loadingRequestContent").addClass("hideElement");
+                    }
+                    if (textSstatus == "error") {
+                        alert("");
+                    }
+                });
+        }
+
+
+        function backButton() {
+            $(".ListRequest").show();
+        }
+
+        function loadRequestContent(ID, tabActive, isQuestion) {
+
+            $(window).resize(function () {
+                if ($(window).width() < 992) {
+                    $(".ListRequest").css('display', 'none');
+                    $("#backBtn").show();
+
+                } else {
+                    $(".ListRequest").show();
+                    $("#backBtn").css('display', 'none');
+
+                }
+            });
+            if ($(window).width() < 992) {
+                $(".ListRequest").css('display', 'none');
+                $("#backBtn").show();
+            } else {
+                $(".ListRequest").show();
+                $("#backBtn").css('display', 'none');
+            }
+            loadCountRequestStatus();
+            $("#RequestContent").empty();
+            $("#loadingRequestContent").removeClass("hideElement");
+            requestActive = ID;
+            //console.log(requestActive);
+            $('.RequestCard').removeClass('activeRequest');
+            $("#Req-" + ID).addClass('activeRequest');
+            if (isQuestion == true) {
+                $("#RequestContent").load("/CommonQuestion/QuestionContent?RequestID=" + ID + "&isGetDataOnly=true",
+                    function (responseText, textSstatus, XMLHttpRequest) {
+                        if (textSstatus == "success") {
+                            $("#loadingRequestContent").addClass("hideElement");
+                            if (tabActive === "showSildeBar") {
+                                $("#showSildeBar").click();
+                            }
+                            if (tabActive != "") {
+                                $('.modal-backdrop').remove();
+                                $("#" + tabActive).click();
+                            }
+                        }
+                        if (textSstatus == "error") {
+                            alert("");
+                        }
+                    });
+
+            } else {
+                $("#RequestContent").load("/RequestContent/RequestContent?RequestID=" + ID + "&isGetDataOnly=true",
+                    function (responseText, textSstatus, XMLHttpRequest) {
+                        if (textSstatus == "success") {
+                            $("#loadingRequestContent").addClass("hideElement");
+                            if (tabActive === "showSildeBar") {
+                                $("#showSildeBar").click();
+                            }
+                            if (tabActive != "") {
+                                $('.modal-backdrop').remove();
+                                $("#" + tabActive).click();
+                            }
+                        }
+                        if (textSstatus == "error") {
+                            alert("");
+                        }
+                    });
+            }
+
+            $(".modal-backdrop").remove();
+        }
+
+        if ('@ViewBag.gotoRequestID' != "") {
+            loadRequestContent('@ViewBag.gotoRequestID','',false);
+            window.history.pushState("","","Index");
+        }
+
+
+        function disableLoading() {
+            $("#modalLoading").addClass("displayModalLoadingNone");
+        }
+
+
+        var PageTitleNotification = {
+            Vars: {
+                OriginalTitle: document.title,
+                Interval: null
+            },
+            On: function (notification, intervalSpeed) {
+                var _this = this;
+                _this.Vars.Interval = setInterval(function () {
+                    document.title = (_this.Vars.OriginalTitle == document.title)
+                        ? notification
+                        : _this.Vars.OriginalTitle;
+                }, (intervalSpeed) ? intervalSpeed : 3000);
+            },
+            Off: function () {
+                clearInterval(this.Vars.Interval);
+                document.title = this.Vars.OriginalTitle;
+            }
+        }
+
+        function loadAddCategoryBody() {
+            $("#AddCategoryModalBody").load('@Url.Action("AddCategory", "ModalContent")');
+        }
+
+        function ShowInfoTagName(ID) {
+            console.log(ID);
+        @*$("#userTagInfo").modal("show");
+            $.getJSON('@Url.Action("userTagInfo", "DanhSachYeuCau")' + "?ID=" + ID, function (data) {
+            var name = data.FullName + " [" + data.UserName + "]";
+            var info = data.Email + " - " + data.Department;
+            $("#imgUserTag").attr('src', '/TemplateV2/images/animals/' + data.avt);
+            $("#nameUserTag").text(name);
+            $("#departmentUserTag").text(info);
+            })*@
+        };
+
+        function loadCountRequestStatus() {
+            $.getJSON('@Url.Action("CountRequestStatus", "RequestList")', function (data) {
+                $(".countnum #CountOpen").text(data.countOpenStatus);
+                $(".countnum #CountProcessing").text(data.countProcessingStatus);
+                $(".countnum #CountClosed").text(data.countClosedStatus);
+                $(".countnum #CountDone").text(data.countDoneStatus);
+                $(".countnum #CountReject").text(data.countRejectStatus);
+                $(".countnum #CountPinned").text(data.countPinnedRequest);
+
+                if (data.countMentionStatus > 0) {
+                    $("#animationBell").addClass("animate__animated animate__tada animate__infinite");
+                    //document.title = "(" + data.countMentionStatus + ") VNTT - Ticket Support System";
+                    //PageTitleNotification.On("Bạn có " + data.countMentionStatus +" thông báo mới");
+
+                } else {
+                    $("#animationBell").removeClass("animate__animated animate__tada animate__infinite");
+                    //document.title = "VNTT - Ticket Support System";
+                    //PageTitleNotification.Off();
+                }
+                $(".countnum #CountMention").text(data.countMentionStatus);
+
+            })
+        };
+        function CountNotification() {
+            $.getJSON('@Url.Action("CountNotification", "Notifications")', function (data) {
+                if (data > 0) {
+                    $("#CountNotification").text(data);
+                }
+            })
+        };
+        function SetAllNotificationsIsSeen() {
+            $.ajax({
+                url: "@Url.Action("SeenAllNotification", "Notifications")",
+                type: "GET",
+                success: function (data) {
+                    $("#CountNotification").text("");
+                    ShowNotification();
+                },
+            });
+        };
+        function ShowNotification() {
+            $("#Notification_Dropdown").empty();
+            $.getJSON('@Url.Action("GetNotification", "Notifications")', function (response) {
+                console.log(response);
+                $.each(response, function (index, value) {
+
+                    if (value.isRead == true) {
+                        $("#Notification_Dropdown").append('<a href="/Notifications/setNotificationIsRead?NotificationID=' + value.notificationID +'"><li style="cursor: pointer" class="media dropdown-item"><div class="media-body"><h5 class="action-title notificationIsRead">' + value.content + '</h5><p><span class="timing">' + value.time + '</span></p></div></li>');
+                    } else {
+                        $("#Notification_Dropdown").append('<a href="/Notifications/setNotificationIsRead?NotificationID=' + value.notificationID +'"><li style="cursor: pointer" class="media dropdown-item"><div class="media-body"><h5 class="action-title">' + value.content + '</h5><p><span class="timing">' + value.time + '</span></p></div></li>');
+
+                    }
+                });
+            })
+        }
+        function loadTicket() {
+            $("#ticketContent").load("https://ticket.vntt.com.vn/Problem/TicketInformation?ticketid=10097130");
+        }
+
+
+        //console.log('@ViewData["CurrentStatus"]');
+        //CountNotification();
+        loadCountRequestStatus();
+        function SearchAnythings() {
+            var textSearch = encodeURI($("#textQuickSearch").val());
+            window.location.href = '@Url.Action("Index","RequestList")' + '?statusRequest=' + '@ViewData["CurrentStatus"]' + '&text=' + textSearch;
+        };
+        function LoadFilterModalBody() {
+           // alert("Chức năng đang bảo trì");
+            $("#FilterModalBody").load("@Url.Action("FilterModal", "ModalContent")");
+        }
+
+    </script>
+    <script>
+        function AlertForm(title, type, showCancelButton, textConfirmBtn) {
+            swal({
+                title: title,
+                type: type,
+                showCancelButton: showCancelButton,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                confirmButtonText: textConfirmBtn
+            })
+        }
+
+        //console.log('@ViewBag.Username');
+    </script>
+    @RenderSection("Scripts", required: false)
+    <!-- End js -->
+</body>
+
+</html>

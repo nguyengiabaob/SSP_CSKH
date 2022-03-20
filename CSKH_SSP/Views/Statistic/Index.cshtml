@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+@model List<CSKH_SSP.ViewModels.UserInfomation.WhoIsOnline>
+<style>
+    .activeWhoIsOnlineCard {
+        background-color: #6c757d75
+    }
+</style>
+@foreach (var item in Model)
+{
+    <div class="media border-bottom border-top border-gray whoIsOnlineCard" id="UserID-@item.UserID" style="background-color: white;cursor: pointer;" onclick="loadTaskOfUserID(@item.UserID)">
+       
+        <div class="media-body m-3" style="display: flex;min-width: 0;margin-left: -5px !important;margin-right: 10px !important;">
+            <div class="col-12" style="padding-right: 0px !important">
+                <strong class="float-right mt-0" style="font-size: 14px">
+                    @if (item.isOnline)
+                    {
+                        <span class="badge badge-primary">Online</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-light">Offline</span>
+                    }
+                    @if (!item.isReady)
+                    {
+                        <span class="badge badge-primary">@item.countAllTask Task(s)</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-success">Ready</span>
+                    }
+                </strong>
+                <div style="display: flex; min-width: 0">
+                    <div class="wrapText" style="margin-top: 4px">
+                       
+                            <a class="alert-link">@item.UserName </a>/ @item.FullName
+                     
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+} 

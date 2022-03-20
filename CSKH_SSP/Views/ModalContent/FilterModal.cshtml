@@ -1,0 +1,63 @@
+﻿@model CSKH_SSP.ViewModels.Helper.CategoryAndPriority;
+@{
+    Layout = null;
+}
+<div class="col-lg-12">
+    <div class="card m-b-30">
+        <form action="javascript:Filter()">
+            @*<h6 class="card-subtitle">Từ khóa ()</h6>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="" id="searchString" placeholder="Theo tiều đề, nội dung, ngươ">
+            </div>*@
+            <h6 class="card-subtitle">Chọn trạng thái</h6>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="selectStatus">
+                    <option selected="" value="Open">Đang chờ</option>
+                    <option value="Processing">Đang xử lý</option>
+                    <option value="Closed">Chờ xác nhận hoàn tất</option>
+                    <option value="Done">Hoàn tất</option>
+                    <option value="Reject">Từ chối</option>
+                </select>
+            </div>
+            <h6 class="card-subtitle">Chọn danh mục</h6>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="selectCategory">
+                    <option value="" selected="">.....</option>
+                    @foreach (var i in Model.categoryList)
+                    {
+                        <option value="@i.IDCategory">@i.CategoryName</option>
+                    }
+                </select>
+            </div>
+            <h6 class="card-subtitle">Chọn mức ưu tiên</h6>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="selectPriority">
+                    <option value="" selected="">.....</option>
+                    @foreach (var i in Model.priorityList)
+                    {
+                        <option value="@i.ID">Mức ưu tiên @i.PriorityName</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Lọc</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tắt</button>
+        </form>
+    </div>
+</div>
+<script>
+function Filter() {
+    var statusID = $("#selectStatus").val();
+    var categoryID = $("#selectCategory").val();
+    var priorityID = $("#selectPriority").val();
+    //var searchString = $("#searchString").val();
+    categoryActive = categoryID;
+    priorityActive = priorityID;
+    statusActive = statusID;
+
+    $("#ListRequest").load("/RequestList/Index?statusRequest=" + statusID + "&category=" + categoryID + "&pri=" + priorityID);
+    $(".close").click();
+    //console.log(statusID);
+    activeStatus(statusID);
+    //window.location.href = "@Url.Action("Index","RequestList")" + "?statusRequest=" + statusID + "&category=" + categoryID + "&pri=" + priorityID;
+        };
+</script>

@@ -1,0 +1,93 @@
+﻿@if (@Model.GroupUserPermission.IsAddDepartmentAssign > 0)
+{
+    <div class="modal fade bd-example-modal-lg" id="AddDepartmentFollowQuickModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Thêm phòng ban theo dõi yêu cầu </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <form @*method="post" action="@Url.Action("UpdateDepartmentFollowRequest","RequestAction")"*@ id="AddDepartmentFollowForm">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="RequestID" id="RequestID_AddDepartmentFollow" value="@Model.ContentRequestHeader.RequestID" readonly hidden>
+                                            <div id="ListDepartmentFollow" class="row">
+
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="BtnAddDepartmentFollowForm">Lưu</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+            function LoadListDepartmentFollow(RequestID) {
+                $.ajax({
+                type: 'GET',
+                    url: '@Url.Action("GetListDepartmentFollow", "ModalContent")' + '?RequestID=' + RequestID,
+                    success: function (response) {
+                        $('#ListDepartmentFollow').empty();
+                    if (response.length == 0) {
+                        $('#ListDepartmentFollow').append($('<option>No data available</option>'));
+                        }
+
+                        $.each(response, function (index, value) {
+                            if (value.isAssignOrFollow == true) {
+                                $('#ListDepartmentFollow').append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="DepartmentID" value="' + value.departmentID + '" checked>' + value.departmentCode + '-' + value.departmentName + '</div></div>'));
+                            } else {
+                                $('#ListDepartmentFollow').append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="DepartmentID" value="' + value.departmentID + '">' + value.departmentCode + '-' + value.departmentName + '</div></div>'));
+                            };
+                        });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        $("#BtnAddDepartmentFollowForm").click(function (event) {
+            event.preventDefault();
+            var form = $('#AddDepartmentFollowForm')[0];
+            var data = new FormData(form);
+            $("#BtnAddDepartmentFollowForm").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("UpdateDepartmentFollowRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    } else {
+                        alert(data);
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+        })
+    </script>
+}

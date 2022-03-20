@@ -1,0 +1,474 @@
+﻿@{
+    Layout = null;
+}
+@model CSKH_SSP.ViewModels.ListRequest.ListRequestAndPermission
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    bool Reject = false;
+    bool Receive = false;
+
+    bool EditCategory = false;
+    bool EditDateFinish = false;
+    bool EditPriority = false;
+    bool AddDepartmentAssign = false;
+    bool AddUserFollow = false;
+    bool AddUserAssign = false;
+
+    if (Model.GroupUserPermission.IsEditRequest > 0)
+    {
+        EditCategory = true;
+        EditDateFinish = true;
+        EditPriority = true;
+    }
+    if (Model.GroupUserPermission.IsRejectRequest > 0)
+    {
+        Reject = true;
+    }
+    if (Model.GroupUserPermission.IsAddDepartmentAssign > 0)
+    {
+        AddDepartmentAssign = true;
+    }
+    if (Model.GroupUserPermission.IsAddUserFollow > 0)
+    {
+        AddUserFollow = true;
+    }
+    if (Model.GroupUserPermission.IsAddUserAssign > 0)
+    {
+        AddUserAssign = true;
+    }
+    if (Model.GroupUserPermission.IsReceiveRequest > 0)
+    {
+        Receive = true;
+    }
+}
+
+
+
+@if (Model.ListRequest.Count() > 0)
+{
+    @*<div class="">
+            <div class="card m-b-30" style="margin-bottom: 10px !important;">
+                <div class="card-body ecommerce-pagination" style="z-index: 1">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-xl-6">
+                            <p>Trang @ViewData["pageNumber"].ToString() - Tổng số @Model.TotalItem trang</p>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    @if (Model.MinPage > 1)
+                                    {
+                                        <li class="page-item"><a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = 1})">1</a></li>
+                                        <li class="page-item"><a class="page-link">...</a></li>
+                                    }
+
+                                    @for (int i = Model.MinPage; i <= Model.MaxPage; i++)
+                                    {
+
+                                        <li class="page-item @(Int32.Parse(@ViewData["pageNumber"].ToString()) == i ? "active" : "") ">
+
+                                            <a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = @i})">@i</a>
+                                        </li>
+                                    }
+
+                                    @if (Model.MaxPage < Model.TotalItem)
+                                    {
+                                        <li class="page-item"><a class="page-link">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = @Model.TotalItem})">@Model.TotalItem</a></li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+
+    @foreach (var item in Model.ListRequest)
+    {
+        @*@(item.RequestPriority == 1 ? "priorityBorder-1" : item.RequestPriority == 2 ? "priorityBorder-2" : item.RequestPriority == 3 ? "priorityBorder-3" : "priorityBorder-4")*@
+        <div class="media border-bottom border-top border-gray RequestCard" id="Req-@item.RequestID" style="background-color: white;cursor: pointer;" onclick="loadRequestContent('@item.RequestID', '',false)">
+            @*<span class="apexcharts-legend-marker pointBlue" rel="1" data:collapsed="false"></span>*@
+            <div class="media-body m-2" style="display: flex;min-width: 0;margin-right: 10px !important;">
+                <div class="col-12" style="padding-right: 0px !important">
+                    @*<strong class="mt-0" style="font-size: 14px">
+            <span class="badge badge-primary">@item.RequestID</span>
+            <span class="badge badge-info">@(item.RequestPriority == 1 ? "#Ưu tiên thấp" : item.RequestPriority == 2 ? "#Ưu tiên trung bình" : item.RequestPriority == 3 ? "#Ưu tiên cao" : "#Gấp")</span>
+            <span class="badge badge-info" id="requestCategory-@item.RequestID">#@item.RequestCategory</span>
+        </strong>*@
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="font-size: 13px; font-weight: 600" class="mt-1 mb-0"> @item.RequestAuthor</p> <section>
+                            <span class="badge badge-info" id="requestCategory-@item.RequestID">#@item.RequestCategory</span>
+                            @if (item.RequestStatus == "Processing" || item.RequestStatus == "Closed" || item.RequestStatus == "Open")
+                            {
+                                if (item.isDeadLine == "HetHan")
+                                {
+                                    <span class="badge badge-danger">Hết hạn</span>
+                                }
+                                @*else if (item.isDeadLine == "SapHetHan")
+                                {
+                                    <span class="badge badge-warning">Sắp hết hạn</span>
+                                }*@
+                                else
+                                {
+                                    <span class="badge badge-info">Mới</span>
+
+                                }
+                            }
+                        </section>
+                    </div>
+
+
+                    <div class="d-flex justify-content-between mb-1 mt-1">
+                        <div class="wrapText">
+                            <strong style="color: #0073e6;font-weight: 900;">
+                                @item.RequestID - @item.RequestTittle
+                            </strong>
+                        </div>@if (item.attFile == true)
+                        {<span style="flex-shrink: 0;"><i class="feather icon-paperclip mr-2" style="color: #6c757d;"></i></span>}
+
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="d-flex text-muted" style="margin-bottom: 0px;font-size: 12px;letter-spacing: 0.8px;">
+                            @*<i class="ti-calendar mr-1"></i>@item.RequestDay.Value.ToString("dd/MM/yyyy") - <strong style="font-weight: 500" id="DateFinish-@item.RequestID"> @item.FinishDay.Value.ToString("dd/MM/yyyy") </strong>*@
+                            <i class="ti-calendar mr-1"></i>Ngày tạo @item.RequestDay.Value.ToString("dd/MM/yyyy")
+                        </p>
+                        <p class="text-muted">
+                            <i class="ti-bookmark-alt ml-1"></i>
+                            @(item.RequestPriority == 1 ? "Ưu tiên thấp" : item.RequestPriority == 2 ? "Ưu tiên trung bình" : item.RequestPriority == 3 ? "Ưu tiên cao" : "Ưu tiên Gấp")
+                        </p>
+                    </div>
+
+                    @if (item.RequestStatus == "Done" && item.TimeDone != null)
+                    {
+                        <div class="d-flex justify-content-end">
+                            <p class="d-flex" style="margin-bottom: 0px;font-size: 12px;letter-spacing: 0.8px;color: red !important ">
+                                <i class="ti-calendar mr-1 text-muted"></i>Ngày hoàn thành : @item.TimeDone.Value.ToString("dd/MM/yyyy") 
+                            </p>
+                        </div>
+                    }
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Start col -->
+        @*<div class="" id="RequestID-@item.RequestID">
+                <div class="card m-b-30 margin-margin-bottom hover-request">
+                    <div class="card-body">
+                        <span class="mr-3 ribbon3"><p class="textRibbon">#@item.RequestID</p></span>
+                        <div class="media" style="padding-left: 4.5rem !important;">
+                            <div class="media-body">
+                                <a href="@Url.Action("RequestContent", "RequestContent", new {RequestID = @item.RequestID})">
+                                    <h6 class="action-title" style="margin-bottom: 5px;">
+                                        @item.RequestTittle - @item.RequestAuthor @if (item.attFile == true)
+                                        {<span><i class="feather icon-paperclip mr-2" style="color: #6c757d;"></i></span>}
+                                        @if (item.isReadOnChange == false)
+                                        {
+                                            <span class="badge badge-danger">New</span>
+                                        }
+                                    </h6>
+                                </a>
+                                <h6>
+
+                                    @if (@item.RequestStatus == "Closed")
+                                    {
+                                        <span class="badge badge-danger-inverse">Đã đóng</span>
+                                    }
+                                    @if (@item.RequestStatus == "Open")
+                                    {
+                                        <span class="badge badge-success-inverse">Chờ tiếp nhận</span>
+                                    }
+                                    @if (@item.RequestStatus == "Processing")
+                                    {
+                                        <span class="badge badge-primary-inverse">Đang xử lý</span>
+                                    }
+
+
+                                    @if (item.RequestPriority == 1)
+                                    {
+                                        <span class="badge badge-primary-inverse @(EditPriority ? "CursorBtn" : "")" @(EditCategory ? "data-toggle=modal data-target=#EditPriorityQuickModal" : "")>Ưu tiên: Thấp @(Html.Raw(EditPriority ? "<i class='feather icon-edit'></i>" : ""))</span>
+                                    }
+                                    else if (item.RequestPriority == 3)
+                                    {
+                                        <span class="badge badge-warning-inverse @(EditPriority ? "CursorBtn" : "")" @(EditCategory ? "data-toggle=modal data-target=#EditPriorityQuickModal" : "")>Ưu tiên: Cao @(Html.Raw(EditPriority ? "<i class='feather icon-edit'></i>" : ""))</span>
+                                    }
+                                    else if (item.RequestPriority == 4)
+                                    {
+                                        <span class="badge badge-danger-inverse @(EditPriority ? "CursorBtn" : "")" @(EditCategory ? "data-toggle=modal data-target=#EditPriorityQuickModal" : "")>Ưu tiên: Gấp @(Html.Raw(EditPriority ? "<i class='feather icon-edit'></i>" : ""))</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge badge-primary-inverse @(EditPriority ? "CursorBtn" : "")" @(EditCategory ? "data-toggle=modal data-target=#EditPriorityQuickModal" : "")>Ưu tiên: Trung bình @(Html.Raw(EditPriority ? "<i class='feather icon-edit'></i>" : ""))</span>
+                                    }
+
+                                    @if (@item.TimeDone != null)
+                                    {
+                                        <span class="badge badge-primary-inverse" style="font-size: 12px !important">Ngày hoàn thành: @item.TimeDone.Value.ToString("dd/MM/yyyy")</span>
+                                    }
+
+
+                                </h6>
+
+                                <div class="row" style="padding-left: 10px;">
+                                    @if (AddDepartmentAssign)
+                                    {
+                                        <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0 @(AddDepartmentAssign ? "CursorBtn requestID_addDepartment_index" : "")" data-requestid="@item.RequestID" @(AddDepartmentAssign ? "onclick=LoadListDepartmentAssign('" + @item.RequestID + "') data-toggle=modal data-target=#AddDepartmentQuickModal" : "")>
+                                            <div class="media">
+                                                <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                    <i class="feather icon-clipboard"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="mb-0">Bộ phận xử lý @(Html.Raw(AddDepartmentAssign ? "<i class='feather icon-edit'></i>" : ""))</p>
+
+                                                    <h7 class="mb-0">
+                                                        @if (item.DepartmentAssign.Count() > 2)
+                                                        {
+                                                            var a = item.DepartmentAssign.Count() - 2;
+                                                            foreach (var t in item.DepartmentAssign.Take(2).Select(x => x.DepartmentCode))
+                                                            {
+
+                                                                @Html.Raw(t + " ");
+                                                            } @Html.Raw(" (+" + a + ")");
+
+                                                        }
+                                                        else if (item.DepartmentAssign.Count() <= 2 && item.DepartmentAssign.Count() > 0)
+                                                        { @foreach (var i in item.DepartmentAssign)
+                                                            {@i.DepartmentCode @Html.Raw(" ")}
+
+                                                    }
+                                                    else
+                                                    {
+                                                        @Html.Raw("---")
+                                                    }
+                                                    </h7>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    @if (AddUserAssign)
+                                    {
+                                        <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0 @(AddUserAssign ? "CursorBtn requestID_addUserAssign_index" : "")" data-requestid="@item.RequestID" @(AddUserAssign ? "onclick=LoadListDepartment('" + item.RequestID + "') data-toggle=modal data-target=#AddUserAssignQuickModal" : "")>
+                                            <div class="media">
+                                                <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                    <i class="feather icon-clipboard"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="mb-0">Người xử lý @(Html.Raw(AddUserAssign ? "<i class='feather icon-edit'></i>" : ""))</p>
+                                                    <h7 class="mb-0">
+                                                        @if (item.UserAssign.Count() > 2)
+                                                        {
+                                                            var a = item.UserAssign.Count() - 2;
+                                                            foreach (var t in item.UserAssign.Take(2).Select(x => x.UserName))
+                                                            {
+
+                                                                @Html.Raw(t + " ");
+                                                            } @Html.Raw(" (+" + a + ")");
+
+                                                        }
+                                                        else if (item.UserAssign.Count() <= 2 && item.UserAssign.Count() > 0)
+                                                        { @foreach (var i in item.UserAssign)
+                                                            {@i.UserName @Html.Raw(" ")}
+
+                                                    }
+                                                    else
+                                                    {
+                                                        @Html.Raw("---")
+                                                    }
+
+                                                    </h7>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    @if (AddUserFollow)
+                                    {
+                                        <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0 @(AddUserFollow ? "CursorBtn requestID_addUserFollow_index" : "")" data-requestid="@item.RequestID" @(AddUserFollow ? "onclick=LoadListDepartment_AddUserFollow('" + item.RequestID + "') data-toggle=modal data-target=#AddUserFollowQuickModal" : "")>
+                                            <div class="media">
+                                                <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                    <i class="feather icon-clipboard"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="mb-0">Người theo dõi @(Html.Raw(AddUserFollow ? "<i class='feather icon-edit'></i>" : ""))</p>
+                                                    <h7 class="mb-0">
+                                                        @if (item.UserFollow.Count() > 2)
+                                                        {
+                                                            var a = item.UserFollow.Count() - 2;
+                                                            foreach (var t in item.UserFollow.Take(2).Select(x => x.UserName))
+                                                            {
+
+                                                                @Html.Raw(t + " ");
+                                                            } @Html.Raw(" (+" + a + ")");
+
+                                                        }
+                                                        else if (item.UserFollow.Count() <= 2 && item.UserFollow.Count() > 0)
+                                                        { @foreach (var i in item.UserFollow)
+                                                            {@i.UserName @Html.Raw(" ")}
+
+                                                    }
+                                                    else
+                                                    {
+                                                        @Html.Raw("---")
+                                                    }
+
+                                                    </h7>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    @if (EditCategory)
+                                    {
+                                        <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0 categories @(EditCategory ? "CursorBtn editCategory_index" : "")" data-requestid="@item.RequestID" @(EditCategory ? "onclick=LoadCategoryList('" + item.CategoryID + "') data-toggle=modal data-target=#EditCategoryQuickModal" : "")>
+                                            <div class="media">
+                                                <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                    <i class="feather icon-clipboard"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <p class="mb-0">Danh mục @(Html.Raw(EditCategory ? "<i class='feather icon-edit'></i>" : ""))</p>
+                                                    <h7 class="mb-0">@item.RequestCategory</h7>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                    <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0">
+                                        <div class="media">
+                                            <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                <i class="feather icon-clipboard"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="mb-0">Ngày bắt tạo</p>
+                                                <h7 class="mb-0">@item.RequestDay.Value.ToString("dd/MM/yyyy")</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-2 col-xl-2 padding-left-0 @(EditDateFinish ? "CursorBtn editDateFinish_index" : "")" data-requestid="@item.RequestID" @(EditDateFinish ? "data-toggle=modal data-target=#EditDateFinishQuickModal" : "")>
+                                        <div class="media">
+                                            <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                                                <i class="feather icon-clipboard"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="mb-0">Ngày kết thúc @(Html.Raw(EditDateFinish ? "<i class='feather icon-edit'></i>" : ""))</p>
+                                                <h7 class="mb-0">@item.FinishDay.Value.ToString("dd/MM/yyyy")</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>*@
+
+        <!-- End col -->
+    }
+    @*@if (!Model.IsLastItem)
+        {
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="text-center mt-3 mb-5">
+                    <button onclick="loadMore()" type="button" class="btn btn-primary btn-lg btn-block">Tải thêm</button>
+                </div>
+            </div>
+        }*@
+
+    @*<div class="col-md-12 col-lg-12 col-xl-12">
+            <div class="card m-b-30">
+                <div class="card-body ecommerce-pagination" style="z-index: 1">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-xl-6">
+                            <p>Trang @ViewData["pageNumber"].ToString() - Tổng số @Model.TotalItem trang</p>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    @if (Model.MinPage > 1)
+                                    {
+                                        <li class="page-item"><a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = 1})">1</a></li>
+                                        <li class="page-item"><a class="page-link">...</a></li>
+                                    }
+
+                                    @for (int i = Model.MinPage; i <= Model.MaxPage; i++)
+                                    {
+
+                                        <li class="page-item @(Int32.Parse(@ViewData["pageNumber"].ToString()) == i ? "active" : "") ">
+
+                                            <a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = @i})">@i</a>
+                                        </li>
+                                    }
+
+                                    @if (Model.MaxPage < Model.TotalItem)
+                                    {
+                                        <li class="page-item"><a class="page-link">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="@Url.Action("Index","RequestList", new { StatusRequest = @ViewData["CurrentStatusRequest"], text = @ViewData["text"], category = @ViewData["category"], pri = @ViewData["pri"], pageNumber = @Model.TotalItem})">@Model.TotalItem</a></li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+}
+else
+{
+    <div class="col-md-12 col-lg-12 col-xl-12">
+        <div class="text-center mt-3 mb-5">
+            <h6 style="color: gray">Không có yêu cầu</h6>
+        </div>
+    </div>
+}
+<script>
+    if (@Model.ListRequest.Count() > 0) {
+            $("#currentTotalReq").text('@Model.ListRequest.Count()');
+    };
+        if (@Model.TotalItem > 0) {
+             $("#TotalReq").text('@Model.TotalItem');
+    };
+
+</script>
+
+
+
+@section Scripts{
+    <script>
+
+
+        //$(".categories").click(function () {
+        //    $("#requestID_toUpdatecategory").val($(this).attr("data-requestid"));
+        //})
+        //console.log('@ViewData["Notification"]');
+        if ('@ViewData["Notification"]' == "NewRequest") {
+            AlertForm("Thêm yêu cầu thành công", "success", false, "Xác nhận");
+            window.history.pushState("", "", "RequestList");
+        }
+        //$(".requestID_addDepartment_index").click(function () {
+        //    $("#RequestID_AddDepartment").val($(this).attr("data-requestid"));
+        //})
+        //$(".requestID_addUserAssign_index").click(function () {
+        //    $("#RequestID_AddUserAssign").val($(this).attr("data-requestid"));
+        //})
+        //$(".requestID_addUserFollow_index").click(function () {
+        //    $("#RequestID_AddUserFollow").val($(this).attr("data-requestid"));
+        //})
+        //$(".editCategory_index").click(function () {
+        //    $("#RequestID_EditCategory").val($(this).attr("data-requestid"));
+        //})
+        //$(".editDateFinish_index").click(function () {
+        //    $("#RequestID_EditDateFinish").val($(this).attr("data-requestid"));
+        //})
+        //
+    </script>
+}

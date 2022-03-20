@@ -1,0 +1,13 @@
+﻿<div class="card m-b-30">
+    <div class="card-body text-center">
+        <div class="user-slider slick-initialized slick-slider">
+            <div class="user-slider-item" style="width: 100%; display: inline-block;">
+                @*<img src="~/assets/svg/profile.svg" alt="avatar" class="rounded-circle mt-3 mb-4">*@
+                <h6>@Model.UserCreateRequestInfomation.UserName <span style="color: #8A98AC; font-size: 13px">/ @Model.UserCreateRequestInfomation.FullName</span></h6>
+                <p>@(string.IsNullOrEmpty(@Model.UserCreateRequestInfomation.Department)?"": @Model.UserCreateRequestInfomation.Department)</p>
+                <p>Tổng số yêu cầu: @Model.UserCreateRequestInfomation.TotalRequest</p>
+            </div>
+        </div>
+    </div>
+
+</div>

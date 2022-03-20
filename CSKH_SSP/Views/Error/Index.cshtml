@@ -1,0 +1,90 @@
+﻿@{
+    Layout = null;
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Orbiter is a bootstrap minimal &amp; clean admin template">
+    <meta name="keywords"
+          content="admin, admin panel, admin template, admin dashboard, responsive, bootstrap 4, ui kits, ecommerce, web app, crm, cms, html, sass support, scss">
+    <meta name="author" content="Themesbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>VNTT - CRM System</title>
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="https://vntt.com.vn/img/logo.ico">
+    <!-- Start css -->
+    <!-- Switchery css -->
+    <link href="~/assets/css/BonusStyle.css" rel="stylesheet" />
+    @*<link href="~/assets/css/switchery.css" rel="stylesheet">*@
+    <link href="~/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/flag-icon.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <style type="text/css" id="dark-mode-custom-style"></style>
+    <link href="~/assets/css/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/assets/css/datepicker.min.css" rel="stylesheet" />
+    <style>
+        .datepicker {
+            z-index: 1600 !important; /* has to be larger than 1050 */
+    </style>
+    <!-- End css -->
+</head>
+
+<body class="vertical-layout">
+    <!-- Start Containerbar -->
+    <div id="containerbar" class="containerbar authenticate-bg">
+        <!-- Start Container -->
+        <div class="container">
+            <div class="auth-box lock-screen-box">
+                <!-- Start row -->
+                <div class="row no-gutters align-items-center justify-content-center">
+                    <!-- Start col -->
+                    <div class="col-md-6 col-lg-5">
+                        <!-- Start Auth Box -->
+                        <div class="auth-box-right">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                        <div class="form-head">
+                                            <a href="@Url.Action("Index","Home")" class="logo"><img src="~/assets/img/logo1.png" class="img-fluid" alt="logo"></a>
+                                        </div>
+                                        <h4 class="text-primary my-4">Lỗi</h4>
+                                        <p class="mb-4">@ViewBag.Message</p>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block font-18" onclick="window.history.back()">Quay lại</button>
+                                  
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Auth Box -->
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+            </div>
+        </div>
+        <!-- End Container -->
+    </div>
+    <!-- End Containerbar -->
+    <!-- Start js -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/modernizr.min.js"></script>
+    <script src="~/assets/js/detect.js"></script>
+    <script src="~/assets/js/jquery.slimscroll.js"></script>
+
+    <!-- End js -->
+
+</body>
+
+</html>

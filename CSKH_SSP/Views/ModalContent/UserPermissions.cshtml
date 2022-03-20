@@ -1,0 +1,111 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    .delCategory {
+        text-decoration-line: line-through;
+    }
+</style>
+<div class="card-body">
+    <h6 class="card-subtitle">Phân quyền người xử lý:  <footer class="blockquote-footer">Danh sách nhân viên có thẻ xử lý yêu cầu </footer></h6>
+    <form id="addCategoryForm">
+        <div class="input-group mb-5">
+            <input type="text" class="form-control" name="CategoryName" id="CategoryName">
+            <div class="input-group-append" id="button-addon4">
+                <button id="addCategoryFormBtn" class="btn btn-outline-primary" type="button"><i class="feather icon-plus mr-2"></i> Thêm</button>
+            </div>
+        </div>
+    </form>
+    <h6 class="card-subtitle">Click vào Tên danh mục để xóa hoặc khôi phục.</h6>
+    <div class="button-list" id="listCategory">
+        @*<button type="button" class="btn btn-outline-light">Light</button>*@
+    </div>
+</div>
+
+@*<ul id="myUL" class="listCategory">
+        <li value="1">Hit the gym</li>
+        <li value="2" class="checked">Pay bills</li>
+        <li value="3">Meet George</li>
+        <li value="4">Buy eggs</li>
+        <li value="5">Read a book</li>
+        <li value="6">Organize office</li>
+    </ul>*@
+
+<script>
+
+
+    function fetchCategory() {
+        $('#listCategory').empty();
+        $.getJSON("api/Helpers/GetAllCategory", function (data) {
+            var toAppend = '';
+            $.each(data, function (i, o) {
+                if (o.isActive == false) {
+                    toAppend += '<div class="btn btn-light delCategory categoryClass" value="' + o.idCategory + '">' + o.categoryName + '</div>';
+                } else {
+                    toAppend += '<div class="btn btn-outline-primary categoryClass" value="' + o.idCategory + '">' + o.categoryName + '</div>';
+                }
+            });
+            $('#listCategory').append(toAppend);
+            //console.log(data);
+        });
+    }
+    fetchCategory();
+    $("#addCategoryFormBtn").click(function (event) {
+            event.preventDefault();
+        var form = $('#addCategoryForm')[0];
+        var data = new FormData(form);
+        $("#addCategoryFormBtn").prop("disabled", true);
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("AddCategory", "AdminAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    if (data == "1") {
+                        fetchCategory();
+                    } else {
+                        alert("Lỗi hoặc đã tồn tại");
+                        $(".close").click();
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+    });
+
+
+
+        //btn-light
+        // Create a "close" button and append it to each list item
+
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('#listCategory');
+    list.addEventListener('click', function (ev) {
+        if (ev.target.classList.contains('categoryClass')) {
+                        var isEnable = true;
+            ev.target.classList.toggle('btn-outline-primary');
+            ev.target.classList.toggle('btn-light');
+            ev.target.classList.toggle('delCategory');
+            if (ev.target.classList.contains("delCategory")) {
+                isEnable = false;
+            };
+
+                $.post("@Url.Action("DisableCategory", "AdminAction")",
+                    {
+                        status: ev.target.getAttribute('value') + "--" + isEnable
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            fetchCategory();
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+        }
+        }, false);
+</script>

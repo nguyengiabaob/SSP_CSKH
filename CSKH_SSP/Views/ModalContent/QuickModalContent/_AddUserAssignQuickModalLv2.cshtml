@@ -1,0 +1,179 @@
+﻿@if (Model.GroupUserPermission.IsAddUserAssign > 0) {
+    <div class="modal fade bd-example-modal-lg" id="AddUserAssignQuickModal2" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Thêm người xử lý Lv2 </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Start col -->
+
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <form @*form method="post" action="@Url.Action("UpdateUserAssignRequest","RequestAction")"*@ id="AddUserAssignForm">
+                                  @*      <div class="form-group">
+                                            <label for="sel1">Chọn phòng ban:</label>
+                                            <select class="form-control" id="ListDepartmentSelectionLv2" onchange="GetUserOfThisDepartment(this);">
+                                            </select>
+                                        </div>*@
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="RequestID" id="RequestID_AddUserAssign" value="@Model.ContentRequestHeader.RequestID" readonly hidden>
+                                            <input type="text" class="form-control" name="FormLevel" id="FormLevel" value="2" readonly hidden>
+                                            
+                                            <div id="AddUserAssignQuickModalLv2" class="row">
+
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="requestIDToAddAssign" hidden>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="BtnAddUserAssignForm">Lưu</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+            function LoadListDepartmentLv2(RequestID) {
+                $.ajax({
+                type: 'GET',
+                    url: '@Url.Action("GetListDepartment", "ModalContent")',
+                    success: function (response) {
+                        $('#ListDepartmentSelectionLv2').empty();
+                        $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").empty();
+                        $("#ListDepartmentSelectionLv2").append($('<option value="" selected> -------- </option>'));
+                        if (response.length == 0) {
+                            $("#ListDepartmentSelectionLv2").append($('<option>No data available</option>'));
+                        }
+
+                        $.each(response, function (index, value) {
+                            $("#ListDepartmentSelectionLv2").append($('<option value="' + value.departmentID + '">' + value.departmentCode + '-' + value.departmentName + '</option>'));
+                        });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+                $('#requestIDToAddAssign').val(RequestID);
+        }
+        function GetUserOfThisDepartment(sel) {
+            $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").empty();
+            $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").text("Loading....");
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetUserOfDepartment", "ModalContent")' + '?DepartmentID=' + sel.value + "&RequestID=" + $("#requestIDToAddAssign").val(),
+                success: function (data) {
+                    $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").empty();
+                    if (data.length == 0) {
+                        $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").append($('No data available'));
+                    }
+                    $.each(data, function (index, value) {
+                        if (value.isAssignOrFollow == true) {
+                            if (value.status === "Ready") {
+                                $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAssignLv2" value="' + value.userName + '" checked>' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-success">' + value.status + '</span></div></div>'));
+                            } else {
+                                $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAssignLv2" value="' + value.userName + '" checked>' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-warning">' + value.status + '</span></div></div>'));
+                            }
+                        } else {
+                            if (value.status === "Ready") {
+                                $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAssignLv2" value="' + value.userName + '">' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-success">' + value.status + '</span></div></div>'));
+                            } else {
+                                $("#AddUserAssignQuickModal2").find("#AddUserAssignQuickModalLv2").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAssignLv2" value="' + value.userName + '">' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-warning">' + value.status + '</span></div></div>'));
+                            }
+                        }
+
+                    });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        $("#BtnAddUserAssignForm").click(function (event) {
+            event.preventDefault();
+            var form = $('#AddUserAssignForm')[0];
+            var data = new FormData(form);
+            $("#BtnAddUserAssignForm").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("UpdateUserAssignRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    } else {
+                        alert(data);
+                        //$(".close").click();s
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        })
+
+        function GetUserPermissionLv2(RequestID, FormLevel) {
+             $('#requestIDToAddAssign').val(RequestID);
+             $('#FormLevel').val(FormLevel);
+            $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").empty();
+            $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").text("Loading....");
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetUserPermission", "ModalContent")' + '?categoryId=' + @Model.ContentRequestHeader.CategoryID + '&RequestID=' + '@Model.ContentRequestHeader.RequestID', //RequestID
+                success: function (data) {
+                    $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").empty();
+                    if (data.length == 0) {
+                        $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").append($('No data available'));
+                    }
+                    $.each(data, function (index, value) {
+                        if (value.isAssignOrFollow == true) {
+                            if (value.status === "Ready") {
+                                $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAsssign" value="' + value.userName + '" checked>' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-success">' + value.status + '</span></div></div>'));
+                            } else {
+                                $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAsssign" value="' + value.userName + '" checked>' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-warning">' + value.status + '</span></div></div>'));
+                            }
+                        } else {
+                            if (value.status === "Ready") {
+                                $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAsssign" value="' + value.userName + '">' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-success">' + value.status + '</span></div></div>'));
+                            } else {
+                                $("#AddUserAssignQuickModalLv2").find("#ListUserOfThisDepartment").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserAsssign" value="' + value.userName + '">' + value.userName + '-' + value.fullName + ' ' + '<span class="badge badge-warning">' + value.status + '</span></div></div>'));
+                            }
+                        }
+
+                    });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        
+
+
+    </script>
+
+}

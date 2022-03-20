@@ -1,0 +1,213 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    Layout = null;
+}
+@model CSKH_SSP.Services.CategoryServices.CategoryDetail
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <h5 class="card-title">@Model.category.CategoryName </h5>
+                <h6 style="margin-top : 40px"> Deadline Response  (giờ) </h6>
+                @{
+                    if (@Model.category.ParentId != null)
+                    {
+                        <input disabled id="HoursDeadline" style="width : 20%" type="number" class="form-control">
+                    }
+                    else
+                    {
+                        <input onchange="setHoursDeadline()" id="HoursDeadline" style="width : 20%" type="number" class="form-control" value="@Model.category.HoursDeadline">
+                    }
+                }
+
+                <br>
+                <h6 style="margin-top : 40px"> Deadline Resolve (giờ) </h6>
+                @{
+                    if (@Model.category.ParentId != null)
+                    {
+                        <input disabled id="HourResolve" style="width : 20%" type="number" class="form-control" data-id="@Model.category.ParentId">
+                    }
+                    else
+                    {
+                        if (@Model.category.HoursResolve == null)
+                        {
+                            <input onchange="setHoursDeadline()" id="HourResolve" style="width : 20%" type="number" class="form-control" value="16">
+                        }
+                        else
+                        {
+                            <input onchange="setHoursDeadline()" id="HourResolve" style="width : 20%" type="number" class="form-control" value="@Model.category.HoursResolve">
+                        }
+                    }
+
+                }
+                <br>
+                <h6 class="card-subtitle" id="ReponseText"> </h6>
+                <h6 class="card-subtitle" id="ResolveText"></h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <h5 class="card-title">Danh sách Người xử lý yêu cầu</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Có thể thêm nhiều tên cùng lúc .Click vào tên User xóa khỏi danh sách</h6>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select class="select2-multi-select form-control select2-hidden-accessible" multiple="" data-select2-id="2" tabindex="-1" aria-hidden="true" id="chooseUserAddStaff">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" onclick="AddUserToCategory()" class="btn btn-primary">Thêm</button>
+                    </div>
+                </div>
+
+                <div class="button-list" id="listStaff">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/assets/js/select2.js"></script>
+<script>
+    var idParent= null;
+    //chooseUserAddStaff
+    $(document).ready(function () {
+        $('#chooseUserAddStaff').select2({
+            placeholder: 'Gõ họ tên hoặc user name người cần tìm',
+        });
+        idParent = $('#HourResolve').data('id');
+        getParentHours();
+        RenderPriorityText();
+    });
+
+        function fetchListUserCanChoose() {
+            $('#chooseUserAddAdmin').empty();
+            $('#chooseUserAddStaff').empty();
+            $.getJSON("api/Helpers/GetUserCanConfigPermission", function (data) {
+                var toAppend = '';
+                $.each(data, function (i, o) {
+                    toAppend += '<option value="' + o.userName + '">' + o.userName + ' - ' + o.fullName + '</option>';
+                });
+                $('#chooseUserAddAdmin').append(toAppend);
+                $('#chooseUserAddStaff').append(toAppend);
+                $("#chooseUserAddAdmin").trigger("change");
+                $("#chooseUserAddStaff").trigger("change");
+                //console.log(data);
+            });
+         }
+
+
+
+        function AddUserToCategory() {
+            var arr = $("#chooseUserAddStaff").val();
+            $.post("@Url.Action("AddUserToCategory", "AdminAction")",
+                {
+
+                        Username: arr,
+                        CategoryId: idParent ? idParent : '@Model.category.IDCategory'
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            fetchPermissionList();
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+    };
+
+    function setHoursDeadline(){
+       let h = document.getElementById("HoursDeadline").value;
+        let r = document.getElementById("HourResolve").value;
+       $.post("@Url.Action("SetHoursDeadline", "AdminAction")",
+                    {
+                        hours: h,
+                        hourResolve: r,
+                        CategoryId: '@Model.category.IDCategory'
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            RenderPriorityText();
+                            alert("Thay đổi thành công")
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+    }
+
+      // public string DeleteUserFromCategory(string Username, int CategoryId)
+
+        function DeleteUserFromCategory(Username) {
+            $.post("@Url.Action("DeleteUserFromCategory", "AdminAction")",
+                    {
+                        Username: Username,
+                        CategoryId: idParent ? idParent : '@Model.category.IDCategory'
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            fetchPermissionList();
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+    };
+    function fetchListStaff(Id) {
+        $('#listStaff').empty();
+        $.getJSON("api/Helpers/CategoryPermission?Id=" + Id, function (data) {
+            var toAppend = '';
+            $.each(data, function (i, o) {
+                toAppend += '<div class="btn btn-outline-primary categoryClass" onclick="DeleteUserFromCategory(\'' + o.userName + '\')" value="' + o.userName + '">' + o.userName + '</div>';
+            });
+            $('#listStaff').append(toAppend);
+            //console.log(data);
+        });
+    };
+    function getParentHours() {
+        let a = $('#HourResolve').data('id');
+        if (a) {
+            $.getJSON('api/Helpers/GetCategoryById?Id=' + a, function (data) {
+                console.log(data);
+                $('#HoursDeadline').val(data.hoursDeadline);
+                if (a.hourResolve) {
+                    $('#HourResolve').val(data.hourResolve);
+                }
+                else {
+                    $('#HourResolve').val(16);
+                }
+            })
+        }
+    }
+    function RenderPriorityText() {
+        $.getJSON('api/Helpers/GetAllPriority', function (data) {
+            let txt1 = "* Deadline Response được cộng thêm số giờ tương ứng với độ ưu tiên:", txt2 = "* Deadline Resolve sẽ được cộng thêm số giờ tương ứng với độ ưu tiên:";
+            $.each(data, function (i, e) {
+                txt1 += `${e.priorityName}  :  ${e.hours + Number($('#HoursDeadline').val())} giờ ,`;
+                txt2 += `${e.priorityName}  :  ${e.hours + Number($('#HourResolve').val())} giờ ,`
+            })
+            console.log(txt1);
+            $('#ReponseText').text(txt1);
+            $('#ResolveText').text(txt2);
+        })
+    }
+    function fetchPermissionList() {
+        fetchListUserCanChoose();
+        fetchListStaff(idParent ? idParent: '@Model.category.IDCategory');
+    };
+    fetchPermissionList();
+
+
+
+</script>

@@ -1,0 +1,131 @@
+﻿@if (Model.GroupUserPermission.IsAddUserFollow > 0) {
+    <div class="modal fade bd-example-modal-lg" id="AddUserFollowQuickModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Thêm người theo dõi </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Start col -->
+
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <form method="post" @*action="@Url.Action("UpdateUserFollowRequest","RequestAction")"*@ id="AddUserFollowForm">
+                                        <div class="form-group">
+                                            <label for="sel1">Chọn phòng ban:</label>
+                                            <select class="form-control" id="ListDepartmentSelection_AddUserFollow" onchange="GetUserOfThisDepartment_AddUserFollow(this);">
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="RequestID" id="RequestID_AddUserFollow" value="@Model.ContentRequestHeader.RequestID" readonly hidden>
+
+                                            <div id="ListUserOfThisDepartment_AddUserFollow" class="row">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="requestIDToAddAssign_AddUserFollow" hidden>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="BtnAddUserFollowForm">Lưu</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+            function LoadListDepartment_AddUserFollow(RequestID) {
+                $.ajax({
+                type: 'GET',
+                    url: '@Url.Action("GetListDepartment", "ModalContent")',
+                    success: function (response) {
+                        $('#ListDepartmentSelection_AddUserFollow').empty();
+                        $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").empty();
+                        $("#ListDepartmentSelection_AddUserFollow").append($('<option value="" selected> -------- </option>'));
+                        if (response.length == 0) {
+                            $("#ListDepartmentSelection_AddUserFollow").append($('<option>No data available</option>'));
+                        }
+
+                        $.each(response, function (index, value) {
+                            $("#ListDepartmentSelection_AddUserFollow").append($('<option value="' + value.departmentID + '">' + value.departmentCode + '-' + value.departmentName + '</option>'));
+                        });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+                $('#requestIDToAddAssign_AddUserFollow').val(RequestID);
+        }
+        function GetUserOfThisDepartment_AddUserFollow(sel) {
+            $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").empty();
+            $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").text("Loading....");
+
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetUserOfDepartment", "ModalContent")' + '?DepartmentID=' + sel.value + "&RequestID=" + $("#requestIDToAddAssign_AddUserFollow").val(),
+                success: function (data) {
+                    $('#AddUserFollowQuickModal').find("#ListUserOfThisDepartment_AddUserFollow").empty();
+
+                    if (data.length == 0) {
+                        $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").append($('No data available'));
+                    }
+                    $.each(data, function (index, value) {
+                        if (value.isAssignOrFollow == true) {
+                            $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserFollow" value="' + value.userName + '" checked>' + value.userName + '-' + value.fullName + '</div></div>'));
+                        } else {
+                            $("#AddUserFollowQuickModal").find("#ListUserOfThisDepartment_AddUserFollow").append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="UserFollow" value="' + value.userName + '">' + value.userName + '-' + value.fullName + '</div></div>'));
+                        }
+
+                    });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        $("#BtnAddUserFollowForm").click(function (event) {
+            event.preventDefault();
+            var form = $('#AddUserFollowForm')[0];
+            var data = new FormData(form);
+            $("#BtnAddUserFollowForm").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("UpdateUserFollowRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    } else {
+                        alert(data);
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+        })
+
+    </script>
+
+}

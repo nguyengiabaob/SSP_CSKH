@@ -1,0 +1,741 @@
+﻿@model CSKH_SSP.ViewModels.AddNewQuestion.AddNewQuestionView;
+@{
+    Layout = null;
+}
+<style>
+    .dataTable thead td,
+    .dataTable thead th {
+        white-space: pre;
+    }
+
+    .dataTable tbody tr {
+        table-layout: fixed;
+        cursor: pointer;
+    }
+
+    div.dataTables_wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+</style>
+@{
+    bool IsEditQuestion = false;
+    int? categoryId = -1;
+    if (Model.Questioninfo != null)
+    {
+        IsEditQuestion = true;
+        categoryId = Model.Questioninfo.Category;
+    }
+}
+<div class="card-header">
+    @if (IsEditQuestion == true)
+    {
+        <p style="display:none" id="requestIdEdit">@Model.Questioninfo.RequestID </p>
+    }
+    <div class="row align-items-center">
+        <div class="col-10">
+            @{ if (IsEditQuestion == true)
+
+                {
+                    <h5 class="card-title mb-0">Sửa câu hỏi </h5>
+                }
+                else
+                {
+                    <h5 class="card-title mb-0">Thêm câu hỏi </h5>
+                }
+            }
+
+        </div><div class="col-2">
+    @{
+        if (IsEditQuestion == false)
+        {
+            <button type="button" class="btn btn-outline-danger" onclick="commonQuestion('')"><i class="feather icon-trash-2 mr-2"></i> Tạo lại từ đầu</button>
+        }
+    }
+
+</div>
+    </div>
+</div>
+<div class="card-body">
+    <form id="addRequestForm">
+        @*action="@Url.Action("AddNewRequest", "AddNewRequest")" method="post" enctype="multipart/form-data">*@
+        <div class="row" style="align-items: flex-end; display: flex">
+            <div class="col">
+                <div class="form-group">
+                    @{
+                        @if (IsEditQuestion == false)
+                        {
+                            <label for=""> Câu hỏi </label><input required class="form-control" placeholder="Nhập tiêu đề" type="text" name="RequestTitle" id="RequestTittle">
+                        }
+                        else
+                        {
+                            <label for=""> Câu hỏi </label><input required class="form-control" placeholder="Nhập tiêu đề" type="text" name="RequestTitle" id="RequestTittle" value="@Model.Questioninfo.RequestTittle">
+                        }
+                    }
+
+                </div>
+            </div>
+            @*@if (isFromTicket)
+                {
+                <div class="col-md-6">
+                <div class="form-group">
+                <label for=""> Ticket ID</label>
+                <div class="input-group mb-3">
+                <input required type="text" class="form-control" placeholder="Nhập TicketID" value="@(isFromTicket ? Model.TicketId : "")" name="IDTicket" id="TicketID" @(isFromTicket ? "readonly" : "")>
+                <div class="input-group-append">
+                <span class="btn btn-primary animate__animated animate__pulse animate__repeat-3" data-toggle="modal" data-target=".Content-from-ticket"><i class="feather icon-info mr-2"></i> Thông tin Ticket</span>
+                </div>
+                </div>
+                </div>
+                </div>
+                }
+                else
+                {
+
+
+                <div class="col-md-6" id="searchTicketCustomerArea">
+                <label for="">Tên khách hàng</label>
+                <div class="input-group mb-3">
+
+                <input type="text" class="form-control" placeholder="Tìm theo ID, Tên, Số điện thoại, Email của khách hàng" id="searchTicketCustomer">
+                <div class="input-group-append">
+                <button class="btn btn-light" type="button" id="searchTicketCustomerBtn">Tìm kiếm</button>
+                </div>
+                </div>
+                </div>
+                }*@
+
+        </div>
+         @*@if (!isFromTicket)
+            {
+            <div class="displayModalLoadingNone" id="TicketCustomerInfoArea">
+            <div class="m-b-30">
+            <div class="row align-items-center mb-2">
+            <div class="col-9">
+            <h5 class="card-title mb-0">Thông tin khách hàng</h5>
+            </div>
+            <div class="col-3">
+            <div class="dropdown">
+            <button onclick="hideInfoTicketCustomerArea()" class="btn btn-link l-h-20 p-0 font-18 float-right" type="button" id="hideInfoTicketCustomer"><i class="feather icon-x-square"></i></button>
+            </div>
+            </div>
+            </div>
+            <partial name="../PartialView/_TicketCustomerInfo">
+            </div>
+            </div>
+            }*@
+        
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="form-group">
+                    @if (IsEditQuestion == false)
+                    {
+                        <label for=""> Họ tên người tạo</label><input class="form-control" placeholder="Nhập tên" id="FullName" name="FullName" type="text" value="@Model.CurrentFullName" readonly>
+                    }
+                    else
+                    {
+                        <label for=""> Họ tên người sửa</label><input class="form-control" placeholder="Nhập tên" id="FullName" name="FullName" type="text" value="@Model.CurrentFullName" readonly>
+                    }
+
+                    <input class="form-control" placeholder="UserID" id="UserID" name="UserName" type="text" value="@Model.UserName" readonly hidden>
+                </div>
+            </div>
+            @*<div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Nhận và gửi và phản hồi bằng Email </label>
+                        <div class="input-group">
+
+                            <div class="form-check-inline ">
+
+                                <input type="checkbox" id="EmailOfUser" name="Email">
+                                @{
+                                    @if (string.IsNullOrEmpty(Model.CurrentEmail))
+                                    {
+                                        <label class="custom-control-label"> Chưa có Email</label>
+                                    }
+                                    else
+                                    {
+                                        <label class="custom-control-label"> @Model.CurrentEmail</label>
+                                    }
+                                }
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>*@
+
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for=""> Chọn danh mục cần hỗ trợ</label>
+                    <select class="form-control" name="" id="CategoryID" required>
+                        
+                        @{
+                            foreach (var i in Model.categories)
+                            {
+                                if (i.IDCategory == (IsEditQuestion == true ? Model.CategoryParent>0 ? Model.CategoryParent : Model.Questioninfo.Category : 38))
+                                {
+                                <option selected value="@i.IDCategory">
+                                    @i.CategoryName
+                                </option>
+                                }
+                                else
+                                {
+                                <option value="@i.IDCategory">
+                                    @i.CategoryName
+                                </option>
+                                }
+
+                            }
+                         }
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="">&nbsp; </label>
+                    <select class="form-control" name="CategoryID" id="CategoryIDChildren" required>
+
+                         @*@foreach (var i in Model.childCategories)
+                            {
+                            if (i.IDCategory == 38)
+                            {
+                            <option selected value="@i.IDCategory">
+                            @i.CategoryName
+                            </option>
+                            }
+                            else
+                            {
+                            <option value="@i.IDCategory">
+                            @i.CategoryName
+                            </option>
+                            }
+
+                            }*@
+                    </select>
+                </div>
+            </div>
+
+
+
+              @*<div class="col-sm-4">
+                <div class="form-group">
+                <label for=""> Chọn người xử lý</label>
+                <select class="select2-multi-select form-control select2-hidden-accessible" name="UserAssign" multiple="" data-select2-id="1" tabindex="-1" aria-hidden="true" id="ChooseUserAssign">
+                @{
+                var groupedUser = Model.UserInDepartments.GroupBy(u => u.DepartmentCode)
+                .Select(grp => new { GroupID = grp.Key, CustomerList = grp.ToList() })
+                .ToList();
+                foreach (var item in groupedUser)
+                {
+
+                <optgroup label="@item.CustomerList[0].DepartmentName">
+                @foreach (var i in item.CustomerList)
+                {
+                <option value="@i.UserName">@i.UserName - @i.FullName</option>
+                }
+                </optgroup>
+                }
+                }
+
+                </select>
+                </div>
+                </div>*@
+            @*<div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="Priority">Chọn mức ưu tiên:</label>
+                        <select class="form-control" id="Priority" name="Priority">
+                            <option value="1">Thấp</option>
+                            <option value="2" selected>Trung bình</option>
+                            <option value="3">Cao</option>
+                            <option value="4">Gấp</option>
+                        </select>
+                    </div>
+                </div>*@
+        </div>
+        <div class="row">
+            @*<div class="col-sm-5">
+                <div class="form-group">
+                <label for=""> Chọn phòng ban, bộ phận xử lý</label>
+                <select class="select2-multi-select form-control select2-hidden-accessible" name="DepartmentAssign" multiple="" data-select2-id="2" tabindex="-1" aria-hidden="true" id="ChooseDepartmentAssign">
+                @{
+                foreach (var item in Model.Departments)
+                {
+                <option value="@item.DepartmentID">@item.DepartmentCode - @item.DepartmentName</option>
+                }
+                }
+                </select>
+                </div>
+                </div>
+                <div class="col-sm-4">
+                <div class="form-group">
+                <label for=""> Chọn người theo dõi</label>
+                <select class="select2-multi-select form-control select2-hidden-accessible" name="UserFollow" multiple="" data-select2-id="3" tabindex="-1" aria-hidden="true" id="ChooseUserFollow">
+                @{
+                foreach (var item in groupedUser)
+                {
+
+                <optgroup label="@item.CustomerList[0].DepartmentName">
+                @foreach (var i in item.CustomerList)
+                {
+                <option value="@i.UserName">@i.UserName - @i.FullName</option>
+                }
+                </optgroup>
+                }
+                }
+
+                </select>
+                </div>
+                </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                <label for="Priority">Chọn mức ưu tiên:</label>
+                <select class="form-control" id="Priority" name="Priority">
+                <option value="1">Thấp</option>
+                <option value="2" selected>Trung bình</option>
+                <option value="3">Cao</option>
+                <option value="4">Gấp</option>
+                </select>
+                </div>
+                </div>*@
+        </div>
+
+        @*<div class="alert alert-info" role="alert">
+            <input class="form-check-input" type="checkbox" value="1" name="isPrivate" id="" style="padding-left: 10px">
+            <label class="form-check-label" for="">
+            CSKH tự giải quyết trong khả năng
+            </label>
+            </div>
+
+        <div class="alert alert-fill-primary" role="alert" id="NoticeMentionCreateNew">
+            <span style="margin-right: 10px" id="timeMentionCreateNew">10</span>
+            Giờ đây bạn có thể YÊU CẦU RIÊNG người xử lý và tag tên họ bằng cách gõ @@.
+            </div>*@
+
+    <div class="form-group">
+        <label for="">Nội dung</label>
+        <div class="alert alert-primary" role="alert">
+            Tag tên bất kỳ ai bằng cách gõ <a href="#" class="alert-link">@@</a>
+        </div>
+        @{
+            if (IsEditQuestion == true)
+            {
+                <textarea cols="60" id="AddNewRequestEditor" name="RequestContent" rows="10">@Model.Questioninfo.RequestContent</textarea>
+            }
+            else
+            {
+                <textarea cols="60" id="AddNewRequestEditor" name="RequestContent" rows="10"></textarea>
+            }
+        }
+
+    </div>
+        <div class="form-group files" id="files1">
+            <span class="btn btn-default btn-file">
+                Chọn file đính kèm <input type="file" name="files" multiple />
+            </span>
+            <br />
+            <ul class="fileList"></ul>
+        </div>
+        <div class="form-buttons-w">
+            @{ if (IsEditQuestion == false)
+                {
+                    <button id="btnSubmitQuestion" class="btn btn-primary" type="submit"> Thêm câu hỏi</button>
+                }
+                else
+                {
+                    <button id="btnSubmitQuestionEdit" class="btn btn-primary" type="submit"> Sửa câu hỏi</button>
+                }
+            }
+
+        </div>
+    </form>
+</div>
+
+
+<div class="modal fade Content-from-ticket" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleLargeModalLabel">Thông tin nội dung từ Ticket</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body" id="TicketContent">
+            </div>
+
+        </div>
+    </div>
+</div>
+<partial name="../ModalContent/QuickModalContent/_TicketContractInfo">
+
+
+    <div class="modal fade list-ticket-customer" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="max-width: 80%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Danh sách khách hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="ListTicketCustomer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade list-ticket-contract-customer" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="max-width: 80%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Danh sách hợp đồng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="ListTicketContract" style="overflow: auto; height: 80vh;">
+                    <table id="ticket-customer-table" class="display">
+                        </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="~/assets/js/LoadUser.js"></script>
+    <script src="~/assets/js/ckeditor/ckeditor.js"></script>
+    <script src="~/assets/js/jquery.linkedSelect.js"></script>
+    <script>
+
+        $('#CategoryID').on("change", function (e) {
+            console.log(@categoryId);
+                            $('#CategoryIDChildren').empty();
+                        let url = window.location.origin + "/api/Helpers/GetChildCategories?parentId=" + e.target.value;
+                        $.get(url, function(result, status) {
+                        var option = '';
+                        console.log(result);
+                            $.each(result, function (key, value) {
+                                if (value.idCategory == @categoryId) {
+                                    $('#CategoryIDChildren')
+                                        .append($(`<option selected></option>`)
+                                            .attr("value", value.idCategory)
+                                            .text(value.categoryName))
+                                }
+                                else {
+                                    $('#CategoryIDChildren')
+                                        .append($(`<option ></option>`)
+                                            .attr("value", value.idCategory)
+                                            .text(value.categoryName))
+                                }
+                        
+                           
+
+                                });
+
+                                    });
+                                }).trigger("change");
+
+                                    $(document).on("keypress", 'form', function (e) {
+                                        var code = e.keyCode || e.which;
+                                        console.log(code);
+                                        if (code == 13) {
+                                            console.log('----');
+                                            e.preventDefault();
+                                            return false;
+                                        }
+                                    });
+                                $(document).ready(function () {
+                                    //$('#ChooseUserAssign').select2({
+                                    //    placeholder: 'Gõ họ tên hoặc user name người cần tìm',
+                                    //});
+                                    //$('#ChooseDepartmentAssign').select2({
+                                    //    placeholder: 'Gõ họ tên phòng ban cần tìm',
+                                    //});
+                                    //$('#ChooseUserFollow').select2({
+                                    //    placeholder: 'Gõ họ tên hoặc user name người cần tìm',
+                                    //});
+                                });
+
+                                CKEDITOR.replace('AddNewRequestEditor', {
+                                    extraPlugins: 'mentions',
+                                });
+                                CKEDITOR.config.mentions = [{
+                                    feed: dataFeed,
+                                    itemTemplate: '<li class="media" data-id="{id}">' +
+                                        '<img class="align-self-center mr-3" style="height: 20px" src="/assets/svg/profile.svg" />' +
+                                        '<div class="media-body"><h7 class="mt-0">{username} / {fullname}</h7></strong>' +
+                                        '<p class="text-muted mb-0">{department}</p>' +
+                                        '</li>',
+                                    outputTemplate: '<a style="color: #0080ff;font-weight: 600;" href="#" id="{id}" onclick="ShowInfoTagName({id})">@@{username}&nbsp;[{fullname}]&nbsp;</a><span>&nbsp;</span>',
+                                    minChars: 0
+                                }];
+                                function dataFeed(opts, callback) {
+                                    var matchProperty = 'username',
+                                        data = ListUserToMention.filter(function (item) {
+                                            return item[matchProperty].indexOf(opts.query.toLowerCase()) == 0;
+                                        });
+
+                                    data = data.sort(function (a, b) {
+                                        return a[matchProperty].localeCompare(b[matchProperty], undefined, {
+                                            sensitivity: 'accent'
+                                        });
+                                    });
+                                    callback(data);
+                                    }
+
+                                //addRequestForm
+                                     $("#btnSubmitQuestion").click(function (event) {
+                                        event.preventDefault();
+                                    var form = $('#addRequestForm')[0];
+                                        for (instance in CKEDITOR.instances)
+                                            CKEDITOR.instances[instance].updateElement();
+                                         var data = new FormData(form);
+
+                                     $("#btnSubmitQuestion").prop("disabled", true);
+                                        $.ajax({
+                                            type: "POST",
+                                            enctype: 'multipart/form-data',
+
+                                            url: "@Url.Action("AddNewQuestion", "CommonQuestion")",
+                                            data: data,
+                                            processData: false,
+                                            contentType: false,
+                                            cache: false,
+                                            timeout: 600000,
+                                            success: function (data) {
+                                                if (data == "OK") {
+                                                    swal({
+                                                        title: "Thêm câu hỏi thành công",
+                                                        //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                                        icon: "success",
+                                                        buttons: true,
+                                                        //dangerMode: true,
+                                                    })
+                                                        .then((willReload) => {
+                                                            loadQuestion();
+                                                            $('#RequestContent').empty();
+                                                            //if (willReload) {
+                                                            //    swal("Loading...", {
+                                                            //        icon: "success",
+                                                            //    });
+                                                            //    window.location.href = window.location.protocol + "//" + window.location.hostname;
+
+                                                            //    location.reload();
+                                                            //}
+                                                        });
+                                                    $('.close').click();
+
+                                                }
+                                            },
+                                            error: function (e) {
+                                            }
+                                        });
+
+                                     })
+                        //EditQuestion
+
+                         $("#btnSubmitQuestionEdit").click(function (event) {
+                                        event.preventDefault();
+                                    var form = $('#addRequestForm')[0];
+                                        for (instance in CKEDITOR.instances)
+                                            CKEDITOR.instances[instance].updateElement();
+                             var data = new FormData(form);
+                             if ($('#requestIdEdit').text()!='') {
+                                   data.append('QuestionId', $('#requestIdEdit').text());
+                             }
+
+
+                             $("#btnSubmitQuestionEdit").prop("disabled", true);
+                                        $.ajax({
+                                            type: "POST",
+                                            enctype: 'multipart/form-data',
+
+                                            url: "@Url.Action("UpdateQuestion", "CommonQuestion")",
+                                            data: data,
+                                            processData: false,
+                                            contentType: false,
+                                            cache: false,
+                                            timeout: 600000,
+                                            success: function (data) {
+                                                if (data == "OK") {
+                                                    swal({
+                                                        title: "Sửa câu hỏi thành công",
+                                                        //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                                        icon: "success",
+                                                        buttons: true,
+                                                        //dangerMode: true,
+                                                    })
+                                                        .then((willReload) => {
+                                                            loadQuestion();
+                                                            $('#RequestContent').empty();
+                                                            //if (willReload) {
+                                                            //    swal("Loading...", {
+                                                            //        icon: "success",
+                                                            //    });
+                                                            //    window.location.href = window.location.protocol + "//" + window.location.hostname;
+
+                                                            //    location.reload();
+                                                            //}
+                                                        });
+                                                    $('.close').click();
+
+                                                }
+                                            },
+                                            error: function (e) {
+                                            }
+                                        });
+
+                                    })
+
+
+    </script>
+
+
+
+    <script>
+        async function getFiles() {
+            return await $.getJSON('api/Helpers/getAttachFileByRequestId?requestId=' + $('#requestIdEdit').text()).then((res) => {
+               console.log(res);
+               return res;
+           })
+        }
+        var filesToUpload = [];
+        var output = [];
+        $(document).ready(async function () {
+            if ($('#requestIdEdit').text() != '') {
+                let a = await getFiles();
+                if (a) {
+                    a.forEach(i => {
+                        var removeLink = "<a onclick=DeleteFileExist(" + i.id + ") class=\"removeFileExist\" href=\"#\" data-fileid=\"" + i + "\">Remove</a>";
+
+                        output.push("<li><strong>", escape(i.fileNameOriginal), "</strong>",
+                            "&nbsp; &nbsp; ", removeLink, "</li> ")
+                    })
+                    $('.fileList').append(output.join(''));
+                }
+            }
+            
+
+         
+           
+            
+            $("#searchTicketCustomerBtn").click(function () {
+                if ($("#searchTicketCustomer").val() === '') {
+                    return alert("Nhập nội dung tìm kiếm");
+                }
+                $("#modalLoading").removeClass("displayModalLoadingNone");
+                var textString = $("#searchTicketCustomer").val();
+                var res = encodeURI('@Url.Action("SearchCustomerTicket", "TicketArea")' + '?textString=' + textString);
+                $("#ListTicketCustomer").load(res,
+                    function (responseText, textSstatus, XMLHttpRequest) {
+                        if (textSstatus == "success") {
+                            $('.list-ticket-customer').modal('show');
+                            $("#modalLoading").addClass("displayModalLoadingNone");
+                        }
+                        if (textSstatus == "error") {
+                            alert("Lỗi");
+                        }
+                    }
+                );
+            });
+        });
+        function loadTicketContent(){
+            $("#TicketContent").load("https://ticket.vntt.com.vn/CSKHLink/Problem?ticket=" + ticketID);
+        }
+        function hideInfoTicketCModelstomerArea() {
+            $("#searchTicketCustomerArea").removeClass("displayModalLoadingNone");
+            $("#TicketCustomerInfoArea").addClass("displayModalLoadingNone");
+            $("#TicketCustomerCode").val();
+            $("#TicketCustomerName").val();
+            $("#TicketCustomerNumPhone").val();
+            $("#TicketCustomerEmail").val();
+            $("#TicketCustomerAddress").val();
+            $("#TicketContractCode").val();
+        }
+
+
+        @*//console.log('@Model.TicketId.ToString()');
+
+        if ('@Model.TicketId.ToString()' != "NULL" && '@Model.TicketId.ToString()' != "404") {
+            $("#TicketContent").load("https://ticket.vntt.com.vn/CSKHLink/Problem?ticket=" + @Model.TicketId.ToString(),
+                function (responseText, textSstatus, XMLHttpRequest) {
+                    if (textSstatus == "success") {
+                        $("#modalLoading").addClass("displayModalLoadingNone");
+                    }
+                    if (textSstatus == "error") {
+                        $("#modalLoading").addClass("displayModalLoadingNone");
+                        alert("Lỗi");
+                    }
+                });
+        } else if ('@Model.TicketId.ToString()' == "404") {
+            AlertForm("Không tim thấy Ticket", "warning", false, "Tiếp tục", "");
+            $("#modalLoading").addClass("displayModalLoadingNone");
+        } else {
+            $("#modalLoading").addClass("displayModalLoadingNone");};
+
+        $("#btnEmail").click(function () {
+            $("#btnEmail").toggleClass("acctiveGetNotificationToEmail");
+            $("#EmailOfUser").toggleClass("disableInput");
+        });*@
+
+        $.fn.fileUploader = function (filesToUpload) {
+            this.closest(".files").change(function (evt) {
+                console.log(evt);
+                for (var i = 0; i < evt.target.files.length; i++) {
+                    filesToUpload.push(evt.target.files[i]);
+                };
+                var output2 = [];
+                for (var i = 0, f; f = evt.target.files[i]; i++) {
+                    var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + i + "\">Remove</a>";
+
+                    output2.push("<li><strong>", escape(f.name), "</strong> - ",
+                        f.size, " bytes. &nbsp; &nbsp; ", removeLink, "</li> ");
+                }
+                $(this).children(".fileList")
+                    .append(output2.join(""));
+            });
+        };
+        $(document).on("click", ".removeFile", function (e) {
+            e.preventDefault();
+            var fileName = $(this).parent().children("strong").text();
+            for (i = 0; i < filesToUpload.length; ++i) {
+                if (filesToUpload[i].name == fileName) {
+                    filesToUpload.splice(i, 1);
+                }
+            }
+            $(this).parent().remove();
+        });
+        $("#files1").fileUploader(filesToUpload);
+        function DeleteFileExist(idFile) {
+            $.ajax({
+                url: 'api/Helpers/DeleteFiles?id=' + idFile,
+                method: 'DELETE',
+                success: (data) => {
+                    if (data == true) {
+                        swal({
+                            title: "Xoá file thành công",
+                            //text: "Once deleted, you will not be able to recover this imaginary file!",
+                            icon: "success",
+                            buttons: true,
+                            //dangerMode: true,
+                        })
+                        output.forEach(i => {
+                            if (i.fileNameOriginal === $('.removeFileExist').parent().children("strong").text()) {
+                                output.splice(i, 1);
+                            }
+                        })
+                    }
+                }
+                
+            })
+           
+        }
+
+    </script>
+
+
+

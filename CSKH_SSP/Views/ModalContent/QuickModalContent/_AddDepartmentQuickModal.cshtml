@@ -1,0 +1,98 @@
+﻿@if (@Model.GroupUserPermission.IsAddDepartmentAssign > 0) {
+    <div class="modal fade bd-example-modal-lg" id="AddDepartmentQuickModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Thêm phòng ban xử lý yêu cầu </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <form @*method="post" action="@Url.Action("UpdateDepartmentAssignRequest","RequestAction")"*@ id="addDepartmentForm">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="RequestID" id="RequestID_AddDepartment" value="@Model.ContentRequestHeader.RequestID" readonly hidden>
+                                            @*<input type="text" class="form-control" name="ContentRequest" id="ContentRequest_AddDepartment" value="@Model.ContentRequestBody.RequestContent" readonly hidden>*@
+                                            <div id="ListDepartment" class="row">
+
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="btnAddDepartmentForm">Lưu</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+            function LoadListDepartmentAssign(RequestID) {
+                $.ajax({
+                type: 'GET',
+                    url: '@Url.Action("GetListDepartment", "ModalContent")' + '?RequestID=' + RequestID,
+                    success: function (response) {
+                    $('#ListDepartment').empty();
+                    if (response.length == 0) {
+                        $('#ListDepartment').append($('<option>No data available</option>'));
+                        }
+                        console.log(response);
+                        $.each(response, function (index, value) {
+                            if (value.isAssignOrFollow == true) {
+                                $('#ListDepartment').append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="DepartmentID" value="' + value.departmentID + '" checked>' + value.departmentCode + '-' + value.departmentName + '</div></div>'));
+                            } else {
+                                $('#ListDepartment').append($('<div class="col-6"><div class="form-check form-check-flat"><input type="checkbox" class="form-check-input" name="DepartmentID" value="' + value.departmentID + '">' + value.departmentCode + '-' + value.departmentName + '</div></div>'));
+                            }
+                    });
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        $("#btnAddDepartmentForm").click(function (event) {
+            event.preventDefault();
+            var form = $('#addDepartmentForm')[0];
+            for (instance in CKEDITOR.instances)
+            var data = new FormData(form);
+            $("#btnAddDepartmentForm").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("UpdateDepartmentAssignRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    } else {
+                        alert(data);
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        })
+
+
+
+    </script>
+}

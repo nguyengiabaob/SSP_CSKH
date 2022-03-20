@@ -1,0 +1,1432 @@
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csprojAssemblyReference.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.xml
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+D:\SVN\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csprojAssemblyReference.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.xml
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\TanND\Desktop\TICKET_eOffice\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csprojAssemblyReference.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.xml
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Duplex.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Http.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.NetTcp.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Primitives.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Security.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketContent.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MailKit.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MimeKit.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ListTicketCustomer.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_TicketContractInfo.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\PartialView\_TicketCustomerInfo.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketCustomerInfo.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\GetTicketContractInfo.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\SearchCustomerTicket.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\_TicketArea.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestAction\ReplyRequest.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Redirect\RedirectCode.cshtml.g.cs
+D:\SVN-VNTT\CSKH_SSP\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\libman.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\libman.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MailKit.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MimeKit.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Duplex.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Http.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.NetTcp.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Primitives.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Security.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csprojAssemblyReference.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ListTicketCustomer.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_TicketContractInfo.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\PartialView\_TicketCustomerInfo.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Redirect\RedirectCode.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestAction\ReplyRequest.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_RequestInfo.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketContent.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\Index.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\taskOfUserId.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\GetTicketContractInfo.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\SearchCustomerTicket.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\_TicketArea.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.xml
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN-VNTT\SSP_TDC\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\libman.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MailKit.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MimeKit.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Duplex.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Http.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.NetTcp.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Primitives.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Security.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\AddCategory.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ListTicketCustomer.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_Non-FinishQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_TicketContractInfo.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\PartialView\_TicketCustomerInfo.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Redirect\RedirectCode.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestAction\ReplyRequest.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_RequestInfo.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketContent.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\taskOfUserId.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\GetTicketContractInfo.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\SearchCustomerTicket.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\_TicketArea.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\StatisticalModal.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\UserPermissions.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistical\Index.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\UserPermission\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\libman.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MailKit.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\MimeKit.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Duplex.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Http.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.NetTcp.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Primitives.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Security.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csprojAssemblyReference.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.xml
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\scopedcss\bundle\CSKH_SSP.styles.css
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\AddCategory.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ListTicketCustomer.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_Non-FinishQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_TicketContractInfo.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\StatisticalModal.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\UserPermissions.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\PartialView\_TicketCustomerInfo.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Redirect\RedirectCode.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestAction\ReplyRequest.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_RequestInfo.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketContent.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistical\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\taskOfUserId.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\GetTicketContractInfo.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\SearchCustomerTicket.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\_TicketArea.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\UserPermission\Index.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\TanND\Desktop\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.AssemblyReference.cache
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\CSKH_SSP.GeneratedMSBuildEditorConfig.editorconfig
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModalLv2.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModalLv3.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddIncident.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\libman.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.exe
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.deps.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.runtimeconfig.dev.json
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\BCrypt.Net-Core.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\MailKit.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\MimeKit.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Duplex.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Http.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.NetTcp.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Primitives.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\System.ServiceModel.Security.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.AssemblyReference.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfoInputs.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.AssemblyInfo.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CoreCompileInputs.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorAssemblyInfo.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\staticwebassets\CSKH_SSP.StaticWebAssets.Manifest.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.input.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.TagHelpers.output.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorCoreGenerate.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\AddNewRequest\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Logout\Logout.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\AddCategory.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\FilterModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddDepartmentModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserAssignModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_AddUserFollowModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditCategoryModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditDateFinishModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_EditPriorityModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_RejectModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\ModalContent\_ReplyModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentFollowQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddDepartmentQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddIncident.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModalLv2.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserAssignQuickModalLv3.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_AddUserFollowQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditCategoryQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditDateFinishQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_EditPriorityQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ListTicketCustomer.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_Non-FinishQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_RejectQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_ReplyQuickModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\QuickModalContent\_TicketContractInfo.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\StatisticalModal.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\ModalContent\UserPermissions.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\PartialView\_TicketCustomerInfo.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Redirect\RedirectCode.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestAction\ReplyRequest.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RequestContent.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_AuthorInformation.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentFollow.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_DepartmentPermission.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserAssign.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\RightContent\_UserFollow.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_AttachFileList.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_ContentRequest.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_PrivateChat.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_RequestInfo.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestContent\_TicketContent.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\RequestList\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistical\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Statistic\taskOfUserId.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\GetTicketContractInfo.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\SearchCustomerTicket.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\TicketArea\_TicketArea.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\UserPermission\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.RazorTargetAssemblyInfo.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.Views.pdb
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.csproj.CopyComplete
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.dll
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.pdb
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\CSKH_SSP.genruntimeconfig.cache
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+C:\Users\ndtan\OneDrive\Máy tính\SVN\SSP\obj\Release\netcoreapp3.1\Razor\Views\Categories\CategoryDetails.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Categories\CategoryDetails.cshtml.g.cs
+D:\SVN\SSP_TDC\Source\CSKH_SSP\CSKH_SSP\obj\Release\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs

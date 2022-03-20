@@ -1,0 +1,74 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+    <div class="row" style="align-items: flex-end; display: flex">
+        <div class="col-sm-9 col-md-3">
+            <div class="form-group">
+                <label for=""> Mã khách hàng</label><input required class="form-control" type="text" name="TicketCustomerCode" id="TicketCustomerCode" readonly>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-6">
+            <div class="form-group">
+                <label for=""> Tên khách hàng</label><input required class="form-control" type="text" id="TicketCustomerName" readonly>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-3">
+            <div class="form-group">
+                <label for="">Số điện thoại</label><input required class="form-control" type="text" id="TicketCustomerNumPhone" readonly>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="align-items: flex-end; display: flex">
+        <div class="col-sm-9 col-md-4">
+            <div class="form-group">
+                <label for=""> Email</label><input required class="form-control" type="text" id="TicketCustomerEmail" readonly>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-4">
+            <div class="form-group">
+                <label for=""> Địa chỉ</label><input required class="form-control" type="text" id="TicketCustomerAddress" readonly>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-4">
+            <div class="form-group">
+                <label for="">Số hợp đồng</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Không có dữ liệu hợp đồng" name="TicketContractID" id="TicketContractCode" readonly hidden>
+                    <div class="input-group-append">
+                        <span class="btn btn-primary animate__animated animate__pulse animate__repeat-3" data-toggle="modal" data-target=".TicketContractInfo" onclick="getContractInfo()"><i class="feather icon-info mr-2"></i> Thông tin hợp đồng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     function getContractInfo() {
+         $("#modalLoading").removeClass("displayModalLoadingNone");
+         var contractCode = $("#TicketContractCode").val();
+            $.ajax({
+                    type: "GET",
+                url: '@Url.Action("TicketContracts", "TicketArea")' + '?ContractId=' + contractCode ,
+                    dataType: 'json',
+                    success: function (response) {
+                        $("#modalLoading").addClass("displayModalLoadingNone");
+                        $('#records_table > tbody').empty();
+                        var trHTML = '';
+                        $.each(response, function (i, item) {
+                            trHTML += '<tr>' +
+                                '<td>' + item.contractCode + '</td>' +
+                                '<td>' + item.contractFast + '</td>' +
+                                '<td>' + item.contractName + '</td>' +
+                                '<td>' + item.department + '</td>' +
+                                '</tr>';
+                        });
+
+                        $('#records_table > tbody').append(trHTML);
+                        
+                    }
+                });
+        }
+    </script>

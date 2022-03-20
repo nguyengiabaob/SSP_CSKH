@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+@model List<CSKH_SSP.ViewModels.TicketArea.TicketContract>
+<link href="~/assets/css/jquery.dataTables.css" rel="stylesheet" />
+@if (Model.Count > 0)
+{
+    <table id="TiketContractCustomerTable" class="display compact table table-striped" style="width:100%">
+        <thead>
+            <tr style="white-space: pre;">
+                <th></th>
+                <th id="shortContractCodeCustomer">Mã hợp đồng</th>
+                <th>Hợp đồng bán</th>
+                <th>Tên hợp đồng</th>
+                <th>Phòng ban</th>
+                @*<th></th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="text-align: center; padding-bottom: 30px;"><input class="form-check-input" type="checkbox" value="@item.ContractFast" name="TicketContractID" id=""></td>
+                    <td>@item.ContractCode</td>
+                    <td style="max-width: 400px;word-break: break-all;">@item.ContractFast</td>
+                    <td style="max-width: 600px;word-break: break-all;">@item.ContractName</td>
+                    <td>@item.Department</td>
+                    @*<td>$320,800</td>*@
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" onclick="chooseContract()" data-dismiss="modal">Lưu</button>
+}
+else
+{
+    <div class="card m-b-30 quote-bg">
+
+        <div class="card-body text-center">
+            <h5 class="text-primary font-italic my-3">404 ...<br> Không có dữ liệu hợp đồng.</h5>
+            <button type="button" class="btn btn-outline-primary" onclick="setNullContract()">Chấp nhận</button>
+        </div>
+    </div>
+}
+
+<script type="text/javascript" charset="utf8" src="~/assets/js/jquery.dataTables.js"></script>
+<script>
+    //$('#TiketContractCustomerTable tbody').on('click', 'tr', function () {
+    //    var dataContract = TiketContractCustomerTable.row(this).data();
+    //    console.log(dataContract);
+
+    //    $("#TicketContractCode").val(dataContract[0]);
+    //    $("#ContractCode_ModalInfo").val(dataContract[0]);
+    //    $("#ContractFast_ModalInfo").val(dataContract[1]);
+    //    $("#ContractName_ModalInfo").val(dataContract[2]);
+    //    $("#Department_ModalInfo").val(dataContract[3]);
+
+    //    $("#searchTicketCustomerArea").addClass("displayModalLoadingNone");
+    //    $("#TicketCustomerInfoArea").removeClass("displayModalLoadingNone");
+    //    $('.list-ticket-contract-customer').modal('hide');
+    //});
+
+    function setNullContract() {
+        $("#searchTicketCustomerArea").addClass("displayModalLoadingNone");
+        $("#TicketCustomerInfoArea").removeClass("displayModalLoadingNone");
+        $('.list-ticket-contract-customer').modal('hide');
+    }
+    function chooseContract() {
+        $("#TicketContractCode").val(contractIDList.toString());
+        $("#searchTicketCustomerArea").addClass("displayModalLoadingNone");
+        $("#TicketCustomerInfoArea").removeClass("displayModalLoadingNone");
+        $('.list-ticket-contract-customer').modal('hide');
+    }
+   
+        var contractIDList = [];
+        $("input[name='TicketContractID']").change(function () {
+            var checked = $(this).val();
+            if ($(this).is(':checked')) {
+                contractIDList.push(checked);
+            } else {
+                contractIDList.splice($.inArray(checked, tmp), 1);
+            }
+        });
+
+        
+
+
+    //TicketContractCode
+</script>
+

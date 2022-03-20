@@ -1,0 +1,11 @@
+180.148.0.189:6889 administrator / oteiUr1oVhfzgozw2GMk (Web VNTT)
+
+180.148.1.191:6889 administrator / oteiUr1oVhfzgozw2GMk
+
+180.148.0.142:6889 administrator / administrator (Cuoc + mua hang + ticket)
+
+180.148.1.141:6889	fileusr / GWvoxNau3Srf1R3YJVIx"
+
+180.148.1.165,1577 adminticket / ticketsystem 
+
+

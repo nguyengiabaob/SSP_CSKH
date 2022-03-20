@@ -1,0 +1,28 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div id="ticketContent">
+
+</div>
+
+    <script>
+
+
+        function loadweb() {
+            var ticketID = '@Model.TicketID';
+            if (ticketID === "") {
+                $("#ticketContent").text("Không có nội dung");
+            } else {
+                $("#ticketContent").load("https://ticket.vntt.com.vn/CSKHLink/index?ticketid=" + ticketID,
+                    function (responseText, textSstatus, XMLHttpRequest) {
+                        if (textSstatus == "success") {
+                            console.log($("#txtTicketID").val());
+                        }
+                        if (textSstatus == "error") {
+                            alert("");
+                        }
+                    });
+            }
+        }
+        loadweb();
+    </script>
+
+

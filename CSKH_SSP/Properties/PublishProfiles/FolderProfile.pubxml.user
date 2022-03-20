@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Tan\Desktop\WebSite1</_PublishTargetUrl>
+    <History>True|2022-01-17T04:57:52.7878820Z;True|2022-01-13T14:13:50.5861918+07:00;True|2022-01-11T09:52:04.7169311+07:00;True|2022-01-10T14:30:23.4541004+07:00;True|2022-01-10T13:43:51.3815870+07:00;True|2021-12-29T13:43:12.8821153+07:00;True|2021-12-29T13:38:17.1565930+07:00;True|2021-12-16T09:15:49.3487470+07:00;True|2021-12-16T08:56:52.9883842+07:00;True|2021-12-14T16:15:13.0721578+07:00;False|2021-12-14T16:07:37.4948074+07:00;True|2021-09-21T02:55:02.5720735+07:00;True|2021-09-21T02:28:53.9217658+07:00;True|2021-09-20T23:41:37.5615667+07:00;True|2021-09-20T21:53:42.2874025+07:00;True|2021-09-20T20:28:33.9034049+07:00;True|2021-09-20T20:22:06.5359150+07:00;True|2021-09-20T19:35:01.0892091+07:00;True|2021-09-20T17:49:44.8090588+07:00;True|2021-06-24T16:52:37.8979206+07:00;True|2021-06-24T15:53:37.2331624+07:00;True|2021-06-24T15:45:36.2644594+07:00;True|2021-06-24T14:18:34.6342663+07:00;True|2021-06-24T11:33:12.3905053+07:00;</History>
+  </PropertyGroup>
+</Project>

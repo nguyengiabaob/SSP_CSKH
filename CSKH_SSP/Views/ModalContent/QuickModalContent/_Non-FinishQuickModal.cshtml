@@ -1,0 +1,117 @@
+﻿@{
+    //var af = Model.ContentRequestHeader;
+    var tempRequestID = Model.ContentRequestHeader.RequestID;
+    var tempCategoryId = Model.ContentRequestHeader.CategoryID;
+
+}
+@if (Model.GroupUserPermission.IsFinishRequest > 0 && @Model.RenderButton.FinishBtn)
+{
+    <div class="modal fade" id="Non-FinishQuickModal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleStandardModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleStandardModalLabel">Tạm hoàn tất yêu cầu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="Non-FinishForm" @*action="@Url.Action("RejectStatus", "RequestAction")" method="post"*@>
+                            <div class="form-group">
+                                <h6 class="card-subtitle">Phân loại lỗi</h6>
+                                <select class="form-control" id="formSelectReason" name="ReasonId">
+                                </select>
+                            </div>
+                            <input type="text" class="form-control" name="RequestID" id="RequestIDReject"
+                                   value="@tempRequestID" hidden>
+                            <input type="text" class="form-control" name="CategoryID" value="@tempCategoryId" hidden>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="submit" id="Non-FinishFormBtn" class="btn btn-primary">Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $.getJSON('@Url.Action("GetReason","RequestContent")', function (data) {
+            var toAppend = '';
+            $.each(data, function (i, o) {
+                toAppend += '<option value="' + o.id + '">' + o.title + '</option>';
+            });
+
+            $('#formSelectReason').append(toAppend);
+
+            //console.log(data);
+        });
+
+        function FinishRequest(RequestID, CategoryID, Status) {
+            swal({
+                text: "Xác nhận hoàn thành Yêu cầu?",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("ChangeStatusRequest", "RequestAction")' + '?RequestID=' + RequestID + '&CategoryID=' + CategoryID + '&Status=' + Status,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID', "");
+                            loadListRequest('@Model.ContentRequestHeader.RequestID');
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                if (dismiss === 'cancel') {
+                    swal.close();
+                }
+            });
+        }
+
+        $("#Non-FinishFormBtn").click(function (event) {
+            event.preventDefault();
+            var form = $('#Non-FinishForm')[0];
+            var data = new FormData(form);
+            $("#Non-FinishFormBtn").prop("disabled", true);
+            data.append('RequestID', '@tempRequestID');
+            data.append('Status', 'Closed');
+
+            $.ajax({
+                type: "POST",
+                //enctype: 'multipart/form-data',
+                url: "@Url.Action("ChangeStatusRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    if (data == "OK") {
+                        //animate__backOutLeft
+                        flyToElement('RequestTitle', 'Closed');
+                        toastr.success('Thông báo !!!', 'Thành công');
+                        //AlertForm("Thành công", "success", false, "OK");
+                        $('.close').click();
+                        loadListRequest(statusActive);
+                        loadRequestContent('@tempRequestID', "")
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        });
+
+    </script>
+}
+else { }

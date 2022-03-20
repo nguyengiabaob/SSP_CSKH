@@ -1,0 +1,572 @@
+﻿@using CSKH_SSP.ViewModels.ContentRequest
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
+@{
+    Layout = null;
+    bool ReceiveBtn = false;
+    bool ReplyBtn = false;
+    bool FinishBtn = false;
+    bool Reject = false;
+    bool EditCategory = false;
+    bool EditDateFinish = false;
+    bool EditPriority = false;
+    bool IsUsePrivateChat = false;
+    bool isPinned = false;
+
+    if (@Model.GroupUserPermission.IsReplyRequest > 0 && Model.RenderButton.ReplyRequestBtn)
+    {
+        ReplyBtn = true;
+    }
+    if (@Model.GroupUserPermission.IsUsePrivateChat > 0)
+    {
+        IsUsePrivateChat = true;
+    }
+    if (Model.GroupUserPermission.IsFinishRequest > 0 && @Model.RenderButton.FinishBtn)
+    {
+        FinishBtn = true;
+    }
+    if (Model.GroupUserPermission.IsRejectRequest > 0 && @Model.RenderButton.RejectBtn)
+    {
+        Reject = true;
+    }
+    if (Model.GroupUserPermission.IsEditRequest > 0)
+    {
+        EditCategory = true;
+        EditDateFinish = true;
+        EditPriority = true;
+    }
+    if (Model.GroupUserPermission.IsReceiveRequest > 0 && @Model.RenderButton.ReceiveRequestBtn)
+    {
+        ReceiveBtn = true;
+    }
+}
+<style>
+
+</style>
+<div class="d-flex justify-content-between" id="infoHeaderContent">
+    <div class="col-7 button-list mb-2 pl-0" id="button-list">
+        @if (Model.IsPinned.ToString() == "False" && Model.ContentRequestHeader.IsQuestion == false)
+        {
+            <button id="pinBtn" type="button" class="btn btn-primary-rgba" onclick="PinnedRequest('@Model.ContentRequestHeader.RequestID', 'pinned')"><i class="ti-pin-alt"></i></button>
+        }
+        else
+        {
+            <button id="pinBtn" type="button" class="btn btn-primary" onclick="PinnedRequest('@Model.ContentRequestHeader.RequestID', 'un-pin')"><i class="ti-pin2"></i></button>
+        }
+
+        @if (ReplyBtn)
+        {
+            <button type="button" class="btn btn-primary-rgba" data-requestid="@Model.ContentRequestHeader.RequestID" data-toggle="modal" data-target="#ReplyQuickModal"><i class="feather icon-send mr-2"></i> Trả lời</button>
+        }
+        @if (ReceiveBtn )
+        {
+            <button type="button" class="btn btn-primary-rgba" onclick="ReceiveRequest('@Model.ContentRequestHeader.RequestID', '@Model.ContentRequestHeader.CategoryID', 'Processing')"><i class="feather icon-check mr-2"></i> Tiếp nhận</button>
+        }
+        @if (FinishBtn)
+        {
+                //onclick="FinishRequest('@Model.ContentRequestHeader.RequestID', '@Model.ContentRequestHeader.CategoryID', 'Closed')"
+            <button type="button" class="btn btn-primary-rgba" data-toggle="modal" data-target="#Non-FinishQuickModal"><i class="feather icon-check mr-2"></i>Tạm hoàn tất</button>
+        }
+        @if ((Model.ContentRequestHeader.RequestStatus == "Closed" && Model.GroupUserPermission.IsEditRequest > 0) || (Model.ContentRequestHeader.isCreateRequest && Model.ContentRequestHeader.RequestStatus == "Closed"))
+        {
+            <button type="button" class="btn btn-primary-rgba" onclick="ConfirmDoneRequest('@Model.ContentRequestHeader.RequestID', '@Model.ContentRequestHeader.CategoryID', 'Done')"><i class="feather icon-save mr-2"></i> Xác nhận hoàn tất</button>
+        }
+        @if (Model.ContentRequestHeader.RequestStatus == "Closed" && Model.GroupUserPermission.IsEditRequest > 0)
+        {
+            <button type="button" class="btn btn-primary-rgba" onclick="AdminReject('@Model.ContentRequestHeader.RequestID', '@Model.ContentRequestHeader.CategoryID', 'AdminReject')"><i class="feather icon-alert-triangle mr-2"></i> Trả lại yêu cầu</button>
+        }
+        @if (Reject)
+        {
+            <button type="button" class="btn btn-primary-rgba" data-toggle="modal" data-target="#RejectQuickModal"><i class="feather icon-save mr-2"></i> Từ chối</button>
+        }
+        <button onclick="openSlideBar()" type="button" class="btn btn-primary-rgba" id="showSildeBar"><i class="feather icon-info mr-2"></i> Thông tin</button>
+
+        @if (EditCategory && EditDateFinish && EditPriority && @Model.RenderButton.IncidentBtn)
+        {
+            <a href="#" data-toggle="modal" data-target=#AddIncidentQuickModal onclick="setAddIncidentRequestId('@Model.ContentRequestHeader.RequestID')" class="btn btn-primary-rgba">Thêm Incident</a>
+
+        }
+
+
+        @if (EditCategory && EditDateFinish && EditPriority)
+        {
+          
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary-rgba dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="feather icon-more-horizontal-"></i>
+                </button>
+
+
+                <div class="dropdown-menu" style="">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#EditCategoryQuickModal" onclick="LoadCategoryList('@Model.ContentRequestHeader.CategoryID','@Model.ContentRequestHeader.RequestID')">Sửa danh mục</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target=#EditDateFinishQuickModal onclick="setRequestIdEditDateFinish('@Model.ContentRequestHeader.RequestID')">Sửa ngày kết thúc</a>
+
+
+                    @*<a class="dropdown-item" href="#">Sửa mức ưu tiên</a>*@
+                </div>
+
+
+            </div>
+            
+        }
+    </div>
+    <div id="list-assign-header" class="col-5 d-flex justify-content-end listUserAssignMobile mb-2 align-items-end animate__animated animate__bounceIn">
+        @*<button type="button" class="btn btn-round btn-primary-rgba"><i class="ti-pin-alt"></i></button>*@
+
+        <span class="badge badge-light-inverse mb-2">Người xử lý :</span>
+        @if (Model.ListUsersAssign.Count > 0)
+        {
+            @foreach (var item in Model.ListUsersAssign)
+            {
+                <span class="badge badge-primary-inverse mb-2 ml-1">@item.UserName - @item.FullName</span>
+            }
+        }
+
+
+    </div>
+
+</div>
+
+<div class="d-flex align-items-center" id="RequestTitle" style="">
+    <span class="badge badge-primary mr-2" id="backBtn" onclick="backButton()" style="background-color: rgba(0, 128, 255, 0.1); cursor: pointer">
+        <span class="svg-icon svg-icon-primary svg-icon-2x" style="filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg) brightness(50%);">
+            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-12-28-020759/theme/html/demo1/dist/../src/media/svg/icons/Navigation/Angle-left.svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-12.000003, -11.999999) "></path>
+                </g>
+            </svg><!--end::Svg Icon-->
+        </span>
+    </span><div class="headerTitle">
+        @Model.ContentRequestHeader.RequestTittle @if (@Model.ContentRequestHeader.attFile == true)
+        {
+            <span class="ml-2"><i class="feather icon-paperclip mr-2" style="color: #6c757d;"></i></span>
+        }
+
+    </div>
+</div>
+
+<!--aa-->
+<ul class="nav nav-tabs custom-tab-line mb-3" id="defaultTabLine" role="tablist" style="font-size: 15px;
+                font-weight: 600;padding-top: 5px;">
+    <li class="nav-item">
+        <a class="nav-link active" id="description-tab-line" data-toggle="tab" href="#description-line"
+           role="tab" aria-controls="description-line" aria-selected="true">
+            <i class="feather icon-file-text mr-2"></i>Nội dung hỗ trợ
+        </a>
+    </li>
+    @if (IsUsePrivateChat)
+    {
+        <li class="nav-item">
+            <a class="nav-link" id="review-tab-line" data-toggle="tab" href="#review-line" role="tab"
+           aria-controls="review-line" aria-selected="false">
+                <i class="feather icon-message-circle mr-2"></i>Trao
+                đổi
+            </a>
+        </li>
+    }
+    <li class="nav-item">
+        <a class="nav-link" id="guide-tab-line" data-toggle="tab" href="#guide-line" role="tab"
+           aria-controls="guide-line" aria-selected="false">
+            <i class="feather icon-paperclip mr-2"></i>File đính kèm
+        </a>
+    </li>
+
+    @if (!@Model.RenderButton.IncidentBtn)
+    {
+        <li class="nav-item">
+            <a class="nav-link" id="incident-tab-line" data-toggle="tab" href="#incident-line" role="tab"
+           aria-controls="guide-line" aria-selected="false">
+                <i class="feather icon-message-circle mr-2"></i>Incident
+            </a>
+        </li>
+    }
+    @*<li class="nav-item" id="infoRequest">
+        <a class="nav-link" id="info-tab-line" data-toggle="tab" href="#info-line" role="tab"
+        aria-controls="guide-line" aria-selected="false">
+        <i class="feather icon-file-text mr-2"></i>Thông tin Yêu cầu
+        </a>
+        </li>*@
+
+
+    @if (Model.TicketID != null)
+    {
+        <li class="nav-item">
+            <a class="nav-link" id="guide-tab-line" data-toggle="tab" href="#ticket-line" role="tab"
+           aria-controls="guide-line" aria-selected="false">
+                <i class="feather icon-file-text mr-2"></i>Nội dung từ Ticket
+            </a>
+        </li>
+    }
+    @if (Model.TicketCustomerID != null)
+    {
+        <li class="nav-item" onclick="getInfoTicketCustomer('@Model.TicketCustomerID', '@Model.ContractID', '@Model.ContentRequestHeader.RequestAuthor')">
+            <a class="nav-link" id="guide-tab-line" data-toggle="tab" href="#ticketCustomerID-line" role="tab"
+           aria-controls="guide-line" aria-selected="false">
+                <i class="feather icon-user mr-2"></i>Thông tin khách hàng
+            </a>
+        </li>
+    }
+
+
+
+</ul>
+<div class="row">
+    <div id="infobar-settings-sidebar" class="infobar-settings-sidebar">
+        <div class="infobar-settings-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Thông tin Yêu cầu</h4><a style="cursor: pointer" onclick="closeSlideBar()" id="infobar-settings-close" class="infobar-settings-close"><img src="/assets/svg/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-settings-sidebar-body">
+            <div class="custom-mode-setting">
+                <partial name="_RequestInfo" model="@Model">
+            </div>
+        </div>
+    </div>
+    <partial name="../ModalContent/QuickModalContent/_ReplyQuickModal" model="@Model">
+        <partial name="../ModalContent/QuickModalContent/_RejectQuickModal" model="@Model">
+            <partial name="../ModalContent/QuickModalContent/_Non-FinishQuickModal" model="@Model">
+                <partial name="../ModalContent/QuickModalContent/_EditCategoryQuickModal" model="@Model">
+                    <partial name="../ModalContent/QuickModalContent/_EditDateFinishQuickModal" model="@Model">
+                        <partial name="../ModalContent/ModalContent/_EditPriorityModal" model="@Model">
+                            @*???????*@
+                            <partial name="../ModalContent/QuickModalContent/_AddUserAssignQuickModal" model="@Model">
+
+
+                                <partial name="../ModalContent/QuickModalContent/_AddUserFollowQuickModal" model="@Model">
+
+                                    <partial name="../ModalContent/QuickModalContent/_AddDepartmentQuickModal" model="@Model">
+                                        <partial name="../ModalContent/QuickModalContent/_AddDepartmentFollowQuickModal" model="@Model">
+
+                                            <partial name="../ModalContent/QuickModalContent/_AddIncident" model="@Model">
+
+                                                <div class="col-lg-12 col-xl-12">
+                                                    <div class="m-b-30">
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade show active" id="description-line" role="tabpanel"
+                                                                 aria-labelledby="description-tab-line">
+                                                                <!--Start Comment-->
+                                                                <partial name="_ContentRequest" model="@Model">
+                                                                    <!--End Comment-->
+                                                            </div>
+                                                            @if (IsUsePrivateChat)
+                                                            {
+                                                                <div class="tab-pane fade" id="review-line" role="tabpanel"
+                                                                 aria-labelledby="review-tab-line">
+                                                                    <partial name="_PrivateChat" model="@Model">
+                                                                </div>
+                                                            }
+                                                            <div class="tab-pane fade" id="guide-line" role="tabpanel"
+                                                                 aria-labelledby="guide-tab-line">
+                                                                <partial name="_AttachFileList" model="@Model">
+                                                            </div>
+                                                            @*<div class="tab-pane fade" id="info-line" role="tabpanel"
+                                                                aria-labelledby="guide-tab-line">
+                                                                <partial name="_RequestInfo" model="@Model">
+                                                                </div>*@
+
+
+                                                            <div class="tab-pane fade" id="ticket-line" role="tabpanel"
+                                                                 aria-labelledby="ticket-tab-line">
+                                                                <partial name="_TicketContent" model="@Model">
+                                                            </div>
+                                                            <div class="tab-pane fade" id="ticketCustomerID-line" role="tabpanel"
+                                                                 aria-labelledby="ticketCustomerID-tab-line">
+                                                                <partial name="../PartialView/_TicketCustomerInfo">
+                                                            </div>
+
+                                                            @if (!@Model.RenderButton.IncidentBtn)
+                                                            {
+                                                                <div class="tab-pane fade" id="incident-line" role="tabpanel"
+                                                                 aria-labelledby="guide-tab-line">
+                                                                    <div class="card text-white bg-dark m-b-30" style="width: 100%;">
+
+                                                                        <div class="card-body">
+
+                                                                            <h5 class="card-title text-white">Nội dung.</h5>
+
+                                                                            @if (Model.RequestIncident.Impact == 1)
+                                                                            {
+                                                                                <p>- Low</p>
+                                                                            }
+                                                                            else if (Model.RequestIncident.Impact == 2)
+                                                                            {
+                                                                                <p>- Medium</p>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <p>- Hight</p>
+                                                                            }
+                                                                             <p>@Model.RequestIncident.CorrectiveAction</p>
+                                                                             <p>@Model.RequestIncident.PreventiveAction</p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            }
+
+                                                            <partial name="../ModalContent/QuickModalContent/_TicketContractInfo">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+    $(window).resize(function () {
+        if ($(window).width() <= 1370) {
+            $("#infoHeaderContent").removeClass("d-flex");
+            $("#button-list").removeClass("col-7").addClass("col-12");
+            $("#list-assign-header").removeClass("col-5");
+            $("#list-assign-header").removeClass("align-items-end");
+            $("#list-assign-header").removeClass("justify-content-end");
+        } else {
+            $("#infoHeaderContent").addClass("d-flex");
+            $("#button-list").removeClass("col-12").addClass("col-7");
+            $("#list-assign-header").addClass("col-5 align-items-end justify-content-end");
+        }
+
+
+    });
+        if ($(window).width() < 992) {
+            $("#backBtn").show();
+        } else {
+            $("#backBtn").css('display', 'none');
+        }
+        if ($(window).width() <= 1370) {
+            $("#infoHeaderContent").removeClass("d-flex");
+            $("#button-list").removeClass("col-7").addClass("col-12");
+            $("#list-assign-header").removeClass("col-5");
+            $("#list-assign-header").removeClass("align-items-end");
+            $("#list-assign-header").removeClass("justify-content-end");
+            //$("#list-assign-header").addClass("listUserAssignMobile");
+        } else {
+            $("#infoHeaderContent").addClass("d-flex");
+            $("#button-list").removeClass("col-12").addClass("col-7");
+            $("#list-assign-header").addClass("col-5 align-items-end justify-content-end");
+
+        }
+    });
+
+    function PinnedRequest(requestId, statusPin) {
+              $.post("@Url.Action("PinRequest", "RequestAction")",
+                    {
+                        RequestID: requestId
+                    },
+                    function (data, status) {
+                        if (data == "OK") {
+                            flyToElement('RequestTitle', 'Pinned');
+                            if (statusPin == "un-pin") {
+                                $("#pinBtn").removeClass("btn-primary");
+                                $("#pinBtn").addClass("btn-primary-rgba");
+                                toastr.warning('Thông báo !!!', 'Bỏ ghim Yêu cầu thành công');
+                                loadListRequest(statusActive);
+                                loadRequestContent('@Model.ContentRequestHeader.RequestID', "");
+                                //console.log(statusActive);
+
+                            } else {
+                                $("#pinBtn").removeClass("btn-primary-rgba");
+                                $("#pinBtn").addClass("btn-primary");
+                                toastr.success('Thông báo !!!', 'Ghim yêu cầu thành công');
+                                loadListRequest(statusActive);
+                                loadRequestContent('@Model.ContentRequestHeader.RequestID', "");
+                                //console.log(statusActive);
+
+                            }
+
+                        } else {
+                            alert("Lỗi");
+                        }
+                    });
+    };
+
+    function openSlideBar() {
+        $("#infobar-settings-sidebar").addClass("sidebarshow");
+    }
+    function closeSlideBar() {
+        $("#infobar-settings-sidebar").removeClass("sidebarshow");
+
+    };
+    function ConfirmDoneRequest(RequestID, CategoryID, Status) {
+            swal({
+                text: "Xác nhận hoàn thành Yêu cầu?",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("ChangeStatusRequest", "RequestAction")' + '?RequestID=' + RequestID + '&CategoryID=' + CategoryID + '&Status=' + Status,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            flyToElement('RequestTitle', 'Done');
+                            toastr.success('Thông báo !!!', 'Thành công');
+                            //AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID',"");
+                            loadListRequest('@Model.ContentRequestHeader.RequestID');
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                if (dismiss === 'cancel') {
+                    swal.close();
+                }
+            });
+    }
+    function ReceiveRequest(RequestID, CategoryID, Status) {
+                $.ajax({
+                    url: '@Url.Action("ChangeStatusRequest", "RequestAction")' + '?RequestID=' + RequestID + '&CategoryID=' + CategoryID + '&Status=' + Status,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            flyToElement('RequestTitle', 'Processing');
+                            toastr.success('Thông báo !!!', 'Tiếp nhận thành công');
+                            //AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID',"");
+                            loadListRequest('@Model.ContentRequestHeader.RequestID');
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                });
+        };
+    function AdminReject(RequestID, CategoryID, Status) {
+            swal({
+                text: "Xác nhận trả lại Yêu cầu?",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("ChangeStatusRequest", "RequestAction")' + '?RequestID=' + RequestID + '&CategoryID=' + CategoryID + '&Status=' + Status,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            flyToElement('RequestTitle', 'Processing');
+                            toastr.warning('Thông báo !!!', 'Trả yêu cầu thành công');
+                            //AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID',"");
+                            loadListRequest('@Model.ContentRequestHeader.RequestID');
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                if (dismiss === 'cancel') {
+                    swal.close();
+                }
+            });
+    }
+    function getInfoTicketCustomer(CustomerID, ContractID, RequestAuthor) {
+        $("#modalLoading").removeClass("displayModalLoadingNone");
+        if (RequestAuthor != "MyVNTT") {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("TicketCustomersInfo", "TicketArea")' + '?CustomerCode=' + CustomerID,
+                dataType: 'json',
+                success: function (response) {
+                    $("#modalLoading").addClass("displayModalLoadingNone");
+                    //console.log(response);
+                    $("#TicketCustomerCode").val(response.customerCode);
+                    $("#TicketCustomerName").val(response.customerName);
+                    $("#TicketCustomerNumPhone").val(response.numPhone);
+                    $("#TicketCustomerEmail").val(response.email);
+                    $("#TicketCustomerAddress").val(response.address);
+                    $("#TicketContractCode").val(ContractID);
+                }
+            });
+        } else {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("getMemberInfo", "TicketArea")' + '?CustomerId=' + CustomerID,
+                dataType: 'json',
+                success: function (response) {
+                    $("#modalLoading").addClass("displayModalLoadingNone");
+
+                    $("#TicketCustomerCode").val(response.customerCode);
+                    $("#TicketCustomerName").val(response.name);
+                    $("#TicketCustomerNumPhone").val("0");
+                    $("#TicketCustomerEmail").val(response.email);
+                    $("#TicketCustomerAddress").val(response.address);
+                    $("#TicketContractCode").val("");
+                }
+            });
+        }
+
+        }
+</script>
+@section Scripts{
+<script>
+
+
+
+    $.fn.fileUploader = function (filesToUpload) {
+        this.closest(".files").change(function (evt) {
+            for (var i = 0; i < evt.target.files.length; i++) {
+                filesToUpload.push(evt.target.files[i]);
+            };
+            var output = [];
+            for (var i = 0, f; f = evt.target.files[i]; i++) {
+                var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + i + "\">Remove</a>";
+
+                output.push("<li><strong>", escape(f.name), "</strong> - ",
+                    f.size, " bytes. &nbsp; &nbsp; ", removeLink, "</li> ");
+            }
+            $(this).children(".fileList")
+                .append(output.join(""));
+        });
+    };
+    @*$("#ReplyRequestForm").submit(function (event) {
+                        event.preventDefault(); //prevent default action
+                        var form_data = $(this).serialize(); //Encode form elements for submission
+
+                        console.log(form_data);
+                        $.ajax({
+                            url: '@Url.Action("ReplyRequest","RequestAction")',
+                            type: "POST",
+                            data: form_data
+                        }).done(function (response) { //
+                            alert(response);
+                        });
+                    });*@
+
+
+
+
+
+    var filesToUpload = [];
+    $(document).on("click", ".removeFile", function (e) {
+        e.preventDefault();
+        var fileName = $(this).parent().children("strong").text();
+        for (i = 0; i < filesToUpload.length; ++i) {
+            if (filesToUpload[i].name == fileName) {
+                filesToUpload.splice(i, 1);
+            }
+        }
+        $(this).parent().remove();
+    });
+    $("#files1").fileUploader(filesToUpload);
+
+
+        $.getJSON('api/Helpers/GetUserMention', function (data) {
+            //ListUserToMention = [];
+            List = data;
+            console.log(List);
+            alert(List);
+        })
+</script>
+}
+
+<!--aa-->

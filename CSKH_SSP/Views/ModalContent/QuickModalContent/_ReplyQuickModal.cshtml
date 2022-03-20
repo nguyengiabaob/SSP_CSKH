@@ -1,0 +1,118 @@
+﻿@if (@Model.GroupUserPermission.IsReplyRequest > 0 && Model.RenderButton.ReplyRequestBtn)
+{
+
+    <div class="modal fade bd-example-modal-lg" id="ReplyQuickModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg" style="max-width: 90% !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleLargeModalLabel">Nhập nội dung trả lời</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="alert alert-primary" role="alert">
+                            Tag tên bất kỳ ai bằng cách gõ <a href="#" class="alert-link">@@</a>
+                        </div>
+                        <form @*enctype="multipart/form-data" method="POST" action="@Url.Action("ReplyRequest","RequestAction")"*@ id="ReplyRequestForm">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="RequestID" id="RequestID_Reply" value="@Model.ContentRequestHeader.RequestID" placeholder="" readonly hidden>
+                                <textarea cols="60" id="ReplyContent" name="ReplyContent" rows="10"></textarea>
+                            </div>
+
+                            <div class="form-group files" id="files1">
+                                <span class="btn btn-default btn-file">
+                                    Chọn file đính kèm <input type="file" name="files" multiple />
+                                </span>
+                                <br />
+                                <ul class="fileList"></ul>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button class="btn btn-primary" type="submit" id="ReplyRequestFormBtn">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //ReplyRequestForm
+        var url = window.location.origin;
+        var ListMention = [];
+        $.getJSON(url + '/api/Helpers/GetUserMention', function (data) {
+            ListMention = data;
+            //console.log(ListMention);
+        })
+        CKEDITOR.replace('ReplyContent', {
+            extraPlugins: 'mentions',
+        });
+        CKEDITOR.config.mentions = [{
+            feed: dataFeed,
+            itemTemplate: '<li class="media" data-id="{id}">' +
+                '<img class="align-self-center mr-3" style="height: 20px" src="/assets/svg/profile.svg" />' +
+                '<div class="media-body"><h7 class="mt-0">{username} / {fullname}</h7></strong>' +
+                '<p class="text-muted mb-0">{department}</p>' +
+                '</li>',
+            outputTemplate: '<a style="color: #0080ff;font-weight: 600;" href="#" id="{id}" onclick="ShowInfoTagName({id})">@@{username}&nbsp;[{fullname}]&nbsp;</a><span>&nbsp;</span>',
+            minChars: 0
+        }];
+
+        function dataFeed(opts, callback) {
+            var matchProperty = 'username',
+                data = ListMention.filter(function (item) {
+                    return item[matchProperty].indexOf(opts.query.toLowerCase()) == 0;
+                });
+
+            data = data.sort(function (a, b) {
+                return a[matchProperty].localeCompare(b[matchProperty], undefined, {
+                    sensitivity: 'accent'
+                });
+            });
+
+            callback(data);
+        }
+
+        $("#ReplyRequestFormBtn").click(function (event) {
+            event.preventDefault();
+            var form = $('#ReplyRequestForm')[0];
+            for (instance in CKEDITOR.instances)
+                CKEDITOR.instances[instance].updateElement();
+            var data = new FormData(form);
+            $("#ReplyRequestFormBtn").prop("disabled", true);
+            data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("ReplyRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    if (data == "OK") {
+                        toastr.success('Thông báo !!!', 'Trả lời thành công');;
+                        //AlertForm("Thành công", "success", false, "OK");
+                        $('.close').click();
+                        loadRequestContent('@ViewBag.RequestID', "")
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        })
+
+    </script>
+}
+else
+{
+
+}
+

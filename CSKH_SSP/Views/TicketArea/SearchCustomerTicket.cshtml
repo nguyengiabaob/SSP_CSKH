@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+@model List<CSKH_SSP.ViewModels.TicketArea.TicketCustomer>
+<link href="~/assets/css/jquery.dataTables.css" rel="stylesheet" />
+<table id="TiketCustomerTable" class="display compact" style="width:100%">
+    <thead>
+        <tr style="white-space: pre;">
+            <th id="shortIDTiketCustomer">ID</th>
+            <th>Tên khách hàng</th>
+            <th>Địa chỉ</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            @*<th></th>*@
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CustomerCode</td>
+                <td style="max-width: 400px;word-break: break-all;">@item.CustomerName</td>
+                <td style="max-width: 600px;word-break: break-all;">@item.Address</td>
+                <td>@item.NumPhone</td>
+                <td style="max-width: 300px;word-break: break-all;">@item.Email</td>
+                @*<td>$320,800</td>*@
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+<script type="text/javascript" charset="utf8" src="~/assets/js/jquery.dataTables.js"></script>
+<script>
+    var TiketCustomerTable = $('#TiketCustomerTable').DataTable({
+    "autoWidth": true,
+    "scrollX": true
+});
+    $('#TiketCustomerTable tbody').on('click', 'tr', function() {
+        var data = TiketCustomerTable.row(this).data();
+        console.log(data);
+    //$("#searchTicketCustomer").val("");
+    $("#TicketCustomerCode").val(data[0]);
+    $("#TicketCustomerName").val(data[1]);
+        $("#TicketCustomerNumPhone").val(data[3]);
+    $("#TicketCustomerEmail").val(data[4]);
+    $("#TicketCustomerAddress").val(data[2]);
+    //$("#searchTicketCustomerArea").addClass("displayModalLoadingNone");
+    //$("#TicketCustomerInfoArea").removeClass("displayModalLoadingNone");
+    $(".list-ticket-customer").modal('hide')
+
+
+    $("#modalLoading").removeClass("displayModalLoadingNone");
+        $("#ListTicketContract").load('@Url.Action("GetTicketContractInfo", "TicketArea")' + '?CustomerCode=' + data[0],
+        function(responseText, textSstatus, XMLHttpRequest) {
+            if (textSstatus == "success") {
+                $("#modalLoading").addClass("displayModalLoadingNone");
+                $('.list-ticket-contract-customer').modal('show');
+            }
+            if (textSstatus == "error") {
+                alert("Lỗi");
+            }
+        }
+    );
+    setTimeout(function() {
+        $("#shortContractCodeCustomer").click();
+    }, 300);
+
+});
+</script>
+

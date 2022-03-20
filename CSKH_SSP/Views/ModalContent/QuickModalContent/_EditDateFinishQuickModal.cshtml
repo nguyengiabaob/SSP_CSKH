@@ -1,0 +1,63 @@
+﻿@if (Model.GroupUserPermission.IsEditRequest > 0)
+{
+    <div class="modal fade" id="EditDateFinishQuickModal" tabindex="-1" role="dialog" aria-labelledby="exampleStandardModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleStandardModalLabel">Thay đổi ngày kết thúc</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="editDateForm">
+                        <input type="text" class="form-control" name="RequestID" id="RequestID_EditDateFinish" readonly hidden>
+                        <div class="form-group">
+                            <input type="date" name="DateFinish" id="DateFinish" class="form-control" aria-describedby="basic-addon3" required>
+                        </div>
+                        <button type="submit" id="editDateFormBtn" class="btn btn-primary">Lưu</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setRequestIdEditDateFinish(ReqID) {
+            $("#RequestID_EditDateFinish").val(ReqID);
+        }
+        $("#editDateFormBtn").click(function (event) {
+            event.preventDefault();
+            var form = $('#editDateForm')[0];
+            var data = new FormData(form);
+            $("#editDateFormBtn").prop("disabled", true);
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("EditRequest", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    if (data == "OK") {
+                        AlertForm("Thành công", "success", false, "OK");
+                        var tempDate = $("#DateFinish").val().split("-");
+                        var DateFinishForAppend = tempDate[2] + "/" + tempDate[1] + "/" + tempDate[0];
+                        $("#DateFinish-" + $('#RequestID_EditDateFinish').val()).text(DateFinishForAppend);
+                        $('.close').click();
+                        loadRequestContent($('#RequestID_EditDateFinish').val(), "")
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        })
+    </script>
+}
+else { }
+
+

@@ -1,0 +1,264 @@
+﻿@if (Model.ContentRequestHeader.RequestStatus == "Reject")
+{
+    <div class="alert alert-danger" role="alert">
+        Yêu cầu bị từ chối <br>
+        Lý do: @Model.ContentRequestHeader.RequestNotes
+    </div>
+}
+@{
+    string Rating = "";
+    string miniIconFeedback = "";
+    if (@Model.ContentRequestHeader.Rating == 1) { Rating = "Tồi tệ"; miniIconFeedback = "angry.svg"; }
+    else if (@Model.ContentRequestHeader.Rating == 2) { Rating = "Không hài lòng"; miniIconFeedback = "sad.svg"; }
+    else if (@Model.ContentRequestHeader.Rating == 3) { Rating = "Bình thường"; miniIconFeedback = "like.svg"; }
+    else if (@Model.ContentRequestHeader.Rating == 4) { Rating = "Hài lòng"; miniIconFeedback = "ya.svg"; }
+    else if (@Model.ContentRequestHeader.Rating == 5) { Rating = "Xuất sắc"; miniIconFeedback = "love.svg"; }
+    else
+    {
+        Rating = "";
+    }
+
+}
+
+@if ((!Model.ContentRequestHeader.isAssignRequest || Model.ContentRequestHeader.isAdmin) && !string.IsNullOrEmpty(Model.ContentRequestHeader.Feedback))
+{
+    <div class="alert alert-primary" role="alert">
+        Người dùng đánh giá mức : @Model.ContentRequestHeader.Rating - <b>@Rating</b> <img src="/assets/svg/@miniIconFeedback" class="miniIconFeedback"><br>
+        Nội dung: @Model.ContentRequestHeader.Feedback
+    </div>
+}
+
+
+@if ((Model.ContentRequestHeader.RequestStatus == "Closed" || Model.ContentRequestHeader.RequestStatus == "Done") && Model.ContentRequestHeader.isCreateRequest && string.IsNullOrEmpty(Model.ContentRequestHeader.Feedback))
+{
+    <div class="card text-white bg-dark bottomSheet shadow rounded m-b-5" style="position: fixed;bottom: 0px;z-index: 99; right: 10px; border-radius: 8px" id="bottomSheet">
+        <div class="card-header header-content-comment d-flex justify-content-between" style="padding: 15px 10px 0px 15px;">
+            <h7 class="mb-1 mr-5" style="color: white">Yêu cầu đã được hoàn tất. Vui lòng gửi đánh giá của bạn</h7>
+            <h5 class="@*animate__animated animate__bounce animate__infinite*@ text-primary ml-5"><i class="feather icon-chevrons-up "></i><span class="pulse-ring"></span></h5>
+        </div>
+        <div class="card-body">
+            <div class="row mb-2 d-flex" style="margin-top: -20px;height: 82px;justify-content: space-evenly">
+                <div class="mb-md-0 border-right-md justify-content-between justify-content-md-center text-center" onclick="feedBackModal(1)" style="cursor: pointer">
+                    <div class="wrapper align-items-center justify-content-center">
+                        <div class="btn social-btn btn-rounded d-inline-block" style="padding: 5px" data-toggle="Angry" title="Tệ">
+                            <img src="~/assets/svg/angry.svg" class="iconFeedback" />
+                        </div>
+                    </div>
+                    <div class="wrapper align-items-center justify-content-center" style="font-size: 0.875rem;">Tồi tệ</div>
+                </div>
+                <div class="mb-md-0 border-right-md justify-content-between justify-content-md-center text-center" onclick="feedBackModal(2)" style="cursor: pointer">
+                    <div class="wrapper align-items-center justify-content-center">
+                        <div class="btn social-btn btn-rounded d-inline-block" style="padding: 5px" data-toggle="Angry" title="Không hài lòng">
+                            <img src="~/assets/svg/sad.svg" class="iconFeedback" />
+                        </div>
+                    </div>
+                    <div class="wrapper align-items-center justify-content-center" style="font-size: 0.875rem;">Không hài lòng</div>
+                </div>
+                <div class="mb-md-0 border-right-md justify-content-between justify-content-md-center text-center" style="cursor: pointer" onclick="feedBackModal(3)">
+                    <div class="wrapper align-items-center justify-content-center">
+                        <div class="btn social-btn btn-rounded d-inline-block" style="padding: 5px" data-toggle="Like" title="Bình thường">
+                            <img src="~/assets/svg/like.svg" class="iconFeedback" />
+                        </div>
+                    </div>
+                    <div class="wrapper align-items-center justify-content-center" style="font-size: 0.875rem;"> Bình thường</div>
+                </div>
+                <div class="mb-md-0 border-right-md justify-content-between justify-content-md-center text-center" style="cursor: pointer" onclick="feedBackModal(4)">
+                    <div class="wrapper align-items-center justify-content-center">
+                        <div class="btn social-btn btn-rounded d-inline-block" style="padding: 5px" data-toggle="Excellent" title="Hài lòng">
+                            <img src="~/assets/svg/ya.svg" class="iconFeedback" />
+                        </div>
+                    </div>
+                    <div class="wrapper align-items-center justify-content-center" style="font-size: 0.875rem;">Hài lòng</div>
+                </div>
+                <div class="mb-md-0 border-right-md justify-content-between justify-content-md-center text-center" style="cursor: pointer" onclick="feedBackModal(5)">
+                    <div class="wrapper align-items-center justify-content-center">
+                        <div class="btn social-btn btn-rounded d-inline-block" style="padding: 5px" data-toggle="Excellent" title="Xuất sắc">
+                            <img src="~/assets/svg/love.svg" class="iconFeedback" />
+                        </div>
+                    </div>
+                    <div class="wrapper align-items-center justify-content-center" style="font-size: 0.875rem;">Xuất sắc</div>
+                </div>
+            </div>
+            <form id="feedBackForm">
+                <div class="input-group">
+                    <textarea class="form-control" name="feedBackContent" id="feedBackContent" rows="3"></textarea>
+                    <input name="feedBackToRequestID" id="feedBackToRequestID" value="@Model.ContentRequestHeader.RequestID" hidden>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary-rgba" type="submit" id="feedBackFormBtn"><i class="feather icon-send"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @*<div class="card m-b-30 borderContent bottomSheet shadow rounded" >
+
+            <div class="card-body">
+
+            </div>
+        </div>*@
+}
+
+@foreach (var item in Model.ContentRequestBody)
+{
+    if (item.IsStaff == "true")
+    {
+        if (item.Status == "advice") { }
+        else
+        {<div class="card m-b-30 border-gray borderContent">
+                <div class="card-header header-content-comment">
+                    <ul class="list-unstyled mb-0">
+                        <div class="media">
+                            <span class="align-self-center mr-3 action-icon-request">
+                                <img src="~/assets/svg/profile.svg" class="img-fluid"
+                                     alt="profile">
+                            </span>
+                            <div class="media-body">
+                                <h7 class="mb-0 @(item.IsStaff == "true"?"mb-0":"")">@item.AuthorFullName</h7>
+                                <p class="mb-0">@item.Time.ToString("dd/MM/yyyy HH:mm")</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle">
+                        @Html.Raw(@item.RequestContent)
+                    </h6>
+                </div>
+                @if (item.Status == "hasAttachFile")
+                {
+                    <div class="card-footer text-right">
+                        @foreach (var i in Model.AttachFile)
+                        {
+                            if (item.ID == i.IDComment)
+                            {
+                                <a target="_blank" href="/UploadedFiles/@i.FileNameOnDB" class="btn btn-outline-primary">@i.FileNameOriginal</a>
+                            }
+                        }
+                    </div>
+                }
+            </div>
+        }
+    }
+    else if (@item.IsTimelinePoint == true && @item.RequestContent != null)
+    {
+        <blockquote class="blockquote text-center">
+            <h6 style="font-size: 13px">
+                @Html.Raw(item.RequestContent)
+            </h6>
+            <footer class="blockquote-footer">
+                Đã gửi vào :  <cite title="Source Title">@item.Time</cite>
+            </footer>
+        </blockquote>
+    }
+    else
+    {
+        <div class="card m-b-30 borderContent">
+            <div class="card-header header-content-comment">
+                <ul class="list-unstyled mb-0">
+                    <div class="media">
+                        <span class="align-self-center mr-3 action-icon-request">
+                            <img src="~/assets/svg/profile.svg" class="img-fluid"
+                                 alt="profile">
+                        </span>
+                        <div class="media-body">
+                            <h7 class="mb-0 @(item.IsStaff == "true"?"mb-0":"")">@item.AuthorFullName</h7>
+                            <p class="mb-0">@item.Time.ToString("dd/MM/yyyy HH:mm")</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">
+                    @Html.Raw(@item.RequestContent)
+                </h6>
+            </div>
+            @if (item.Status == "hasAttachFile")
+            {
+                <div class="card-footer text-right">
+                    @foreach (var i in Model.AttachFile)
+                    {
+                        if (item.ID == i.IDComment)
+                        {
+                            <a target="_blank" href="~/UploadedFiles/@i.FileNameOnDB" class="btn btn-outline-primary">@i.FileNameOriginal</a>
+                        }
+                    }
+                </div>
+            }
+        </div>
+    }
+}
+<script>
+    var defaultRating = 4;
+    function feedBackModal(rating) {
+        defaultRating = rating;
+    }
+    var iconFeedBack = document.getElementsByClassName('iconFeedback');
+    if (iconFeedBack.length > 0) {
+        iconFeedBack[3].classList.add("activeIconFeedback");
+    }
+    for (var i = 0; i < iconFeedBack.length; i++) {
+        (function (index) {
+            iconFeedBack[index].addEventListener("click", function () {
+                $(".iconFeedback").removeClass("activeIconFeedback");
+                iconFeedBack[index].classList.add("activeIconFeedback");
+            })
+        })(i);
+    }
+
+
+    //for (var i = 0; i < iconFeedBack.length; i++) {
+    //    iconFeedBack[i].addEventListener("click", function () {
+    //        var current = document.getElementsByClassName("activeIconFeedback");
+    //        current[0].className = current[0].className.replace(" activeIconFeedback", "");
+    //        this.className += " activeIconFeedback";
+    //    });
+    //}
+    $(document).ready(function () {
+
+
+
+        //if ($(".bottomSheet").length >  0) {
+        //    var elmnt = document.getElementById("button-list");
+        //    document.getElementById("bottomSheet").style.width = elmnt.offsetWidth - 55 + "px";
+        //}
+
+
+        $("#feedBackFormBtn").click(function (event) {
+            event.preventDefault();
+            var form = $('#feedBackForm')[0];
+            var data = new FormData(form);
+            data.append("rating", defaultRating);
+            $("#feedBackFormBtn").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("FeedBack", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "");
+                    } else {
+                        alert(data);
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+        })
+
+
+    });
+
+
+</script>
+

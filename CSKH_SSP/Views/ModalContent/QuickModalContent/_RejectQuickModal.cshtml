@@ -1,0 +1,68 @@
+﻿@{ 
+    //var af = Model.ContentRequestHeader;
+    var tempRequestID = Model.ContentRequestHeader.RequestID;
+}
+
+@if (Model.GroupUserPermission.IsRejectRequest > 0)
+{
+    <div class="modal fade" id="RejectQuickModal" tabindex="-1" role="dialog" aria-labelledby="exampleStandardModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleStandardModalLabel">Từ chối yêu cầu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="RejectForm" @*action="@Url.Action("RejectStatus", "RequestAction")" method="post"*@>
+                            <input type="text" class="form-control" name="RequestID" id="" value="@tempRequestID" hidden>
+                            <div class="form-group">
+                                <textarea class="form-control" name="NoteReject" id="NoteReject" rows="3" placeholder="Nhập lý do từ chối" required></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="submit" id="RejectFormBtn" class="btn btn-primary">Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#RejectFormBtn").click(function (event) {
+            event.preventDefault();
+            var form = $('#RejectForm')[0];
+
+            var data = new FormData(form);
+            $("#RejectFormBtn").prop("disabled", true);
+            data.append('RequestID', '@tempRequestID');
+            $.ajax({
+                type: "POST",
+                //enctype: 'multipart/form-data',
+                url: "@Url.Action("RejectStatus", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    if (data == "OK") {
+                        flyToElement('RequestTitle', 'Reject');
+                        toastr.success('Thông báo !!!', 'Từ chối thành công');
+                        //AlertForm("Thành công", "success", false, "OK");
+                        $('.close').click();
+                        loadListRequest(statusActive);
+                        loadRequestContent('@tempRequestID', "")
+                    }
+                },
+                error: function (e) {
+                }
+            });
+
+        });
+     
+    </script>
+}
+else { }

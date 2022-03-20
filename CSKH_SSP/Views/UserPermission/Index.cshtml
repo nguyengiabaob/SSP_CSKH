@@ -1,0 +1,203 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    Layout = null;
+}
+@model List<CSKH_SSP.ViewModels.AddNewRequest.UserInDepartment>
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <h5 class="card-title">Danh sách Admin</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Có thể thêm nhiều tên cùng lúc .Click vào tên User xóa khỏi danh sách</h6>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select class="select2-multi-select form-control select2-hidden-accessible" multiple="" data-select2-id="3" tabindex="-1" aria-hidden="true" id="chooseUserAddAdmin">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" onclick="SetPermission(1)" class="btn btn-primary">Thêm</button>
+                    </div>
+                </div>
+
+                <div class="button-list" id="listAdmin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <h5 class="card-title">Danh sách Người xử lý yêu cầu</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Có thể thêm nhiều tên cùng lúc .Click vào tên User xóa khỏi danh sách</h6>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select class="select2-multi-select form-control select2-hidden-accessible" multiple="" data-select2-id="2" tabindex="-1" aria-hidden="true" id="chooseUserAddStaff">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" onclick="SetPermission(2)" class="btn btn-primary">Thêm</button>
+                    </div>
+                </div>
+
+                <div class="button-list" id="listStaff">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <h5 class="card-title">Danh sách Trưởng nhóm / bộ phận</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Có thể thêm nhiều tên cùng lúc .Click vào tên User xóa khỏi danh sách</h6>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select class="select2-multi-select form-control select2-hidden-accessible" multiple="" data-select2-id="2" tabindex="-1" aria-hidden="true" id="chooseUserAddStaff">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" onclick="SetPermission(4)" class="btn btn-primary">Thêm</button>
+                    </div>
+                </div>
+
+                <div class="button-list" id="listStaff">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*<div class="card-header">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <h5 class="card-title mb-0">Phân quyền người dùng</h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4">
+
+            </div>
+        </div>
+    </div>*@
+
+<script>
+    //chooseUserAddStaff
+    $(document).ready(function () {
+        $('#chooseUserAddAdmin').select2({
+            placeholder: 'Gõ họ tên hoặc user name người cần tìm',
+        });
+        $('#chooseUserAddStaff').select2({
+            placeholder: 'Gõ họ tên hoặc user name người cần tìm',
+        });
+    });
+
+        function fetchListUserCanChoose() {
+            $('#chooseUserAddAdmin').empty();
+            $('#chooseUserAddStaff').empty();
+            $.getJSON("api/Helpers/GetUserCanConfigPermission", function (data) {
+                var toAppend = '';
+                $.each(data, function (i, o) {
+                    toAppend += '<option value="' + o.userName + '">' + o.userName + ' - ' + o.fullName + '</option>';
+                });
+                $('#chooseUserAddAdmin').append(toAppend);
+                $('#chooseUserAddStaff').append(toAppend);
+                $("#chooseUserAddAdmin").trigger("change");
+                $("#chooseUserAddStaff").trigger("change");
+                //console.log(data);
+            });
+         }
+
+        function SetPermission(groupID) {
+            var arr = [];
+            if (groupID == 1) {
+                arr = $("#chooseUserAddAdmin").val();
+            } else if (groupID == 2) {
+                arr = $("#chooseUserAddStaff").val();
+            }
+            $.post("@Url.Action("SetPermission", "AdminAction")",
+                    {
+                        Username: arr,
+                        GroupUserID: groupID
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            fetchPermissionList();
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+    };
+
+        function delUserPermission(userName) {
+            $.post("@Url.Action("DeletePermission", "AdminAction")",
+                    {
+                        Username: userName
+                    },
+                    function (data, status) {
+                        if (data == "1") {
+                            fetchPermissionList();
+                        } else {
+                            alert("Lỗi");
+                            $(".close").click();
+                        }
+                    });
+    };
+        //chooseUserAddAdmin
+        function fetchListAdmin() {
+            $('#listAdmin').empty();
+            $.getJSON("api/Helpers/GetAllAdmin", function (data) {
+                var toAppend = '';
+                $.each(data, function (i, o) {
+                    toAppend += '<div class="btn btn-outline-primary categoryClass" onclick="delUserPermission(\''  + o.userName +'\')" value="' + o.userName + '">' + o.userName + ' - ' + o.fullName + '</div>';
+                });
+                $('#listAdmin').append(toAppend);
+                //console.log(data);
+            });
+    };
+    function fetchListStaff() {
+        $('#listStaff').empty();
+        $.getJSON("api/Helpers/GetAllUserCanAssignRequest", function (data) {
+            var toAppend = '';
+            $.each(data, function (i, o) {
+                toAppend += '<div class="btn btn-outline-primary categoryClass" onclick="delUserPermission(\'' + o.userName + '\')" value="' + o.userName + '">' + o.userName + ' - ' + o.fullName + '</div>';
+            });
+            $('#listStaff').append(toAppend);
+            //console.log(data);
+        });
+    };
+
+    function fetchPermissionList() {
+        fetchListAdmin();
+        fetchListUserCanChoose();
+        fetchListStaff();
+    };
+    fetchPermissionList();
+
+
+
+</script>

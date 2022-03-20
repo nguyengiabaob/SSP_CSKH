@@ -1,0 +1,72 @@
+﻿@if (@Model.GroupUserPermission.IsUsePrivateChat > 0) {
+    <ul class="list-unstyled">
+        <li class="media">
+            <div class="card text-white bg-dark m-b-30" style="width: 100%;">
+
+                <div class="card-body">
+                    <form id="SendPrivateChatOrAdviceForm" @*method="post" action="@Url.Action("SendPrivateChatOrAdvice","RequestAction")"*@>
+                        <h5 class="card-title text-white">Trao đổi / Ghi chú nội bộ.</h5>
+                        <input type="text" class="form-control" name="RequestID" id="RequestID_PriveteNote" value="@Model.ContentRequestHeader.RequestID" readonly hidden>
+                        <p class="card-text">Chỉ quản trị, người được phân quyền mới có thể sử dụng và đọc nội dung chức năng này.</p>
+                        <textarea class="form-control" name="ContentPrivateChat" id="inputTextarea" rows="2" placeholder="Nhập nội dung"></textarea>
+                        <button type="submit" id="BtnSendPrivateChatOrAdviceForm" class="btn btn-success-rgba" style="margin-top: 8px;"><i class="feather icon-send mr-2"></i> Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </li>
+        @if (Model.PrivateChat.Count > 0) {
+            @foreach (var item in Model.PrivateChat) {
+                <li class="media m-b-30">
+                    <span class="align-self-center mr-3 action-icon-request"><img src="~/assets/svg/profile.svg" class="img-fluid" alt="profile"></span>
+                    <div class="media-body">
+                        <h6 class="font-16 mt-0 mb-1">@item.AuthorFullName <span></span></h6>
+                        <p class="mb-0">
+                            @Html.Raw(@item.ContentRequest)
+                        </p>
+                        <p class="mb-0" style="font-size: 10px">
+                            @item.DateTime
+                        </p>
+                    </div>
+                </li>
+            }
+        } else {
+            <li class="media m-b-30">
+                <div class="media-body">
+                    <h6 class="font-16 mt-0 mb-1" style="color:#8A98AC ">Chưa có nội dung</h6>
+                </div>
+            </li>
+        }
+    </ul>
+    <script>
+        $("#BtnSendPrivateChatOrAdviceForm").click(function (event) {
+            event.preventDefault();
+            var form = $('#SendPrivateChatOrAdviceForm')[0];
+            var data = new FormData(form);
+            $("#BtnSendPrivateChatOrAdviceForm").prop("disabled", true);
+            //data.append('RequestID', '@ViewBag.RequestID');
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "@Url.Action("SendPrivateChatOrAdvice", "RequestAction")",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+                success: function (data) {
+                    //console.log(data);
+                    if (data == "OK") {
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "review-tab-line");
+                    } else {
+                        alert(data);
+                        //$(".close").click();
+                        loadRequestContent('@Model.ContentRequestHeader.RequestID', "review-tab-line");
+                    }
+                },
+                error: function (e) {
+                }
+            });
+        })
+    </script>
+}

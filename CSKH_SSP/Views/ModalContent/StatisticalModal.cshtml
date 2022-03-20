@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+}
+@model CSKH_SSP.ViewModels.Helper.CategoryAndPriority;
+<div class="col-lg-12">
+    <div class="card m-b-30">
+
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Thời gian tạo Request từ ngày :</label>
+                <input type="date" class="form-control" id="dateStartStatistical">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">tới ngày :</label>
+                <input type="date" class="form-control" id="dateEndStatistical">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom03">Mã khách hàng</label>
+                <input type="text" class="form-control" id="CustomerIDStatistical">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Mã hợp đồng</label>
+                <input type="text" class="form-control" id="ContractIDStatistical">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Mã Ticket</label>
+                <input type="text" class="form-control" id="TicketIDStatistical">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Người xử lý</label>
+                <input type="text" class="form-control" id="UserAssignStatistical">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Trạng thái</label>
+                <select class="custom-select" id="StatusStatistical">
+                    <option value="" selected>-----</option>
+                    <option value="Open">Đang chờ</option>
+                    <option value="Processing">Đang xử lý</option>
+                    <option value="Closed">Chờ xác nhận hoàn tất</option>
+                    <option value="Done">Hoàn tất</option>
+                    <option value="Reject">Từ chối</option>
+                </select>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Danh mục</label>
+                <select class="custom-select" id="CategoryStatistical">
+                    <option value="" selected="">.....</option>
+                    @foreach (var i in Model.categoryList)
+                    {
+                        <option value="@i.IDCategory">@i.CategoryName</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="form-row justify-content-end mt-3">
+            <div class="form-check mr-5">
+                <input type="checkbox" class="form-check-input" id="isPrivate">
+                <label class="form-check-label" for="isPrivate">Thống kê yêu cầu tự xử lý ?</label>
+            </div>
+            <button class="btn btn-primary" onclick="Thongke()">Xuất Excel</button>
+
+        </div>
+
+
+        
+
+
+    </div>
+</div>
+<script>
+    function Thongke() {
+        var dateStartStatistical = $("#dateStartStatistical").val();
+        var dateEndStatistical = $("#dateEndStatistical").val();
+        var CustomerIDStatistical = $("#CustomerIDStatistical").val(); //TicketID ContractID
+        var ContractIDStatistical = $("#ContractIDStatistical").val();
+        var TicketIDStatistical = $("#TicketIDStatistical").val();
+        var UserAssignStatistical = $("#UserAssignStatistical").val();
+        var CategoryStatistical = $("#CategoryStatistical").val();
+        var StatusStatistical = $("#StatusStatistical").val();
+        var isPrivate = $('#isPrivate').is(":checked");
+        window.open("/Statistical/Index?startDay=" + dateStartStatistical + "&endDate=" + dateEndStatistical + "&CustomerId=" + CustomerIDStatistical + "&TicketID=" + TicketIDStatistical + "&ContractID=" + ContractIDStatistical + "&UserAssign=" + UserAssignStatistical + "&Category=" + CategoryStatistical + "&Status=" + StatusStatistical + "&IsPrivate=" + isPrivate);
+    }
+</script>

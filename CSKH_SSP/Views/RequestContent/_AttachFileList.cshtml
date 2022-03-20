@@ -1,0 +1,23 @@
+﻿<div class="row" style="padding-left: 10px;">
+    @if (Model.AttachFile.Count > 0)
+    {
+        foreach (var i in Model.AttachFile)
+        {
+            <div class="col-6 col-md-6 col-lg-6 col-xl-6 padding-left-0 " onclick="location.href='/UploadedFiles/@i.FileNameOnDB';" style="cursor: pointer">
+                <div class="media">
+                    <span class="align-self-center mr-3 action-icon-request badge badge-secondary-inverse">
+                        <i class="feather icon-clipboard"></i>
+                    </span>
+                    <div class="media-body">
+                        <p class="mb-0">Loại file:</p>
+                        <h7 class="mb-0">@i.FileNameOriginal</h7>
+                    </div>
+
+                </div>
+            </div>
+        }
+    }
+
+
+</div>
+

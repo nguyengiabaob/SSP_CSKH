@@ -1,0 +1,507 @@
+﻿<!-- Start row -->
+@*        <div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingOneicon" style=" display: flex; justify-content: space-between;">
+    <h5 class="card-title">
+    Bộ phận xử lý
+    </h5>
+    <button class="bbtn btn-primary-rgba" type="button"
+    data-toggle="collapse" data-target="#collapseOneicon"
+    aria-expanded="true" aria-controls="collapseOneicon">
+    <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+    </button>
+    </div>
+    <div id="collapseOneicon" class="collapse show" aria-labelledby="headingOneicon"
+    data-parent="#accordionwithicon" style="">
+    <div class="card">
+    <div class="chat-list">
+    <div class="chat-user-list">
+    <ul class="list-unstyled mb-0">
+    @if (Model.ListDepartmentsAssign.Count > 0)
+    @foreach (var item in Model.ListDepartmentsAssign)
+    {
+    <li class="media">
+    <img class="align-self-center rounded-circle"
+    src="~/assets/svg/profile.svg"
+    alt="Generic placeholder image">
+    <div class="media-body">
+    <h5>
+    @item.DepartmentCode
+    @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+    {
+    <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteDepartment('@Model.ContentRequestHeader.RequestID','@item.DepartmentID','@item.DepartmentName')" style="float: right;">X</span>
+    }
+    </h5>
+    <p>@item.DepartmentName</p>
+    </div>
+    </li>
+    }
+    else
+    {
+    <li class="media">
+    <div class="media-body text-center">
+    <h6 class="text-muted">
+    Chưa có phòng ban
+    </h6>
+
+    </div>
+    </li>
+    }
+    </ul>
+    </div>
+    </div>
+    @if (Model.GroupUserPermission.IsAddDepartmentAssign > 0)
+    {
+    <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addDepartment" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartmentAssign('@Model.ContentRequestHeader.RequestID')" data-toggle="modal" data-target="#AddDepartmentQuickModal">Thêm</button></div>
+    }
+    </div>
+    </div>
+    </div> *@
+
+
+<div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingTwoicon" style=" display: flex; justify-content: space-between;">
+        <h5 class="card-title">
+            Người xử lý Lv1
+        </h5>
+
+        <button class="bbtn btn-primary-rgba" type="button"
+                data-toggle="collapse" data-target="#collapseTwoicon"
+                aria-expanded="true" aria-controls="collapseTwoicon">
+            <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+        </button>
+
+    </div>
+    <div id="collapseTwoicon" class="collapse show" aria-labelledby="headingTwoicon"
+         data-parent="#accordionwithicon">
+        <div class="card">
+            <div class="chat-list">
+                <div class="chat-user-list">
+                    <ul class="list-unstyled mb-0">
+                        @if (Model.ListUsersAssign.Count > 0)
+                        {
+                            @foreach (var item in Model.ListUsersAssign)
+                            {
+                                if (item.DepartmentID == 1)
+                                {
+                                    <li class="media">
+                                        <img class="align-self-center rounded-circle"
+                                 src="~/assets/svg/profile.svg"
+                                 alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5>
+                                                @item.UserName
+                                                @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+                                                {
+                                                    <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteUserAssign('@Model.ContentRequestHeader.RequestID','@item.UserID','@item.UserName', 'UserAssign')" style="float: right;">X</span>
+                                                }
+                                            </h5>
+                                        <p>@item.FullName / Chức vụ</p>
+                                    </div>
+                                </li>}
+                            }
+                        }
+                        else
+                        {
+                            <li class="media">
+                                <div class="media-body text-center">
+                                    <h6 class="text-muted">
+                                        Chưa có người xử lý
+                                    </h6>
+
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            @if (Model.GroupUserPermission.IsAddUserAssign > 0)
+            {
+                @*<div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartment('@Model.ContentRequestHeader.RequestID' ,1)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>*@
+                <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="GetUserPermission('@Model.ContentRequestHeader.RequestID' ,1)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingTwoicon" style=" display: flex; justify-content: space-between;">
+        <h5 class="card-title">
+            Người xử lý Lv2
+        </h5>
+
+        <button class="bbtn btn-primary-rgba" type="button"
+                data-toggle="collapse" data-target="#collapseTwoicon2"
+                aria-expanded="true" aria-controls="collapseTwoicon2">
+            <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+        </button>
+
+    </div>
+    <div id="collapseTwoicon2" class="collapse show" aria-labelledby="headingTwoicon"
+         data-parent="#accordionwithicon">
+        <div class="card">
+            <div class="chat-list">
+                <div class="chat-user-list">
+                    <ul class="list-unstyled mb-0">
+                        @if (Model.ListUsersAssign.Count > 0)
+                        {
+                            @foreach (var item in Model.ListUsersAssign)
+                            {
+                                if (item.DepartmentID == 2)
+                                {
+                                    <li class="media">
+                                        <img class="align-self-center rounded-circle"
+                                 src="~/assets/svg/profile.svg"
+                                 alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <h5>
+                                                @item.UserName
+                                                @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+                                                {
+                                                    <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteUserAssign('@Model.ContentRequestHeader.RequestID','@item.UserID','@item.UserName', 'UserAssignLv2')" style="float: right;">X</span>
+                                                }
+                                            </h5>
+                                            <p>@item.FullName / Chức vụ</p>
+                                        </div>
+                                    </li>
+                                }
+
+
+                            }
+                        }
+                        else
+                        {
+                            <li class="media">
+                                <div class="media-body text-center">
+                                    <h6 class="text-muted">
+                                        Chưa có người xử lý
+                                    </h6>
+
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            @if (Model.GroupUserPermission.IsAddUserAssign > 0)
+            {
+                @*<div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartment('@Model.ContentRequestHeader.RequestID',2)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>*@
+                <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="GetUserPermission('@Model.ContentRequestHeader.RequestID',2)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingTwoicon" style=" display: flex; justify-content: space-between;">
+        <h5 class="card-title">
+            Người xử lý Lv3
+        </h5>
+
+        <button class="bbtn btn-primary-rgba" type="button"
+                data-toggle="collapse" data-target="#collapseTwoicon3"
+                aria-expanded="true" aria-controls="collapseTwoicon3">
+            <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+        </button>
+
+    </div>
+    <div id="collapseTwoicon3" class="collapse show" aria-labelledby="headingTwoicon"
+         data-parent="#accordionwithicon">
+        <div class="card">
+            <div class="chat-list">
+                <div class="chat-user-list">
+                    <ul class="list-unstyled mb-0">
+                        @if (Model.ListUsersAssign.Count > 0)
+                        {
+                            @foreach (var item in Model.ListUsersAssign)
+                            {
+                                if (item.DepartmentID == 3)
+                                {
+                                    <li class="media">
+                                    <img class="align-self-center rounded-circle"
+                                 src="~/assets/svg/profile.svg"
+                                 alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5>
+                                            @item.UserName
+                                            @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+                                            {
+                                                <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteUserAssign('@Model.ContentRequestHeader.RequestID','@item.UserID','@item.UserName', 'UserAssignLv3')" style="float: right;">X</span>
+                                            }
+                                        </h5>
+                                        <p>@item.FullName / Chức vụ</p>
+                                    </div>
+                                </li>
+                                }
+                                
+                            }
+                        }
+                        else
+                        {
+                            <li class="media">
+                                <div class="media-body text-center">
+                                    <h6 class="text-muted">
+                                        Chưa có người xử lý
+                                    </h6>
+
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            @if (Model.GroupUserPermission.IsAddUserAssign > 0)
+            {
+                @*<div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartment('@Model.ContentRequestHeader.RequestID',3)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>*@
+                <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserAssign" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="GetUserPermission('@Model.ContentRequestHeader.RequestID',3)" data-toggle="modal" data-target="#AddUserAssignQuickModal">Thêm</button></div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@*        <div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingOneicon" style="display: flex; justify-content: space-between;">
+    <h5 class="card-title">
+    Bộ phận theo dõi
+    </h5>
+    <button class="btn btn-primary-rgba" type="button"
+    data-toggle="collapse" data-target="#collapseFouricon"
+    aria-expanded="true" aria-controls="collapseFouricon">
+    <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+    </button>
+
+    </div>
+    <div id="collapseFouricon" class="collapse show" aria-labelledby="headingFouricon"
+    data-parent="#accordionwithicon" style="">
+    <div class="card">
+    <div class="chat-list">
+    <div class="chat-user-list">
+    <ul class="list-unstyled mb-0">
+    @if (Model.ListDepartmentsFollow.Count > 0)
+    @foreach (var item in Model.ListDepartmentsFollow)
+    {
+    <li class="media">
+    <img class="align-self-center rounded-circle"
+    src="~/assets/svg/profile.svg"
+    alt="Generic placeholder image">
+    <div class="media-body">
+    <h5>
+    @item.DepartmentCode
+    @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+    {
+    <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteDepartmentFollow('@Model.ContentRequestHeader.RequestID','@item.DepartmentID','@item.DepartmentName')" style="float: right;">X</span>
+    }
+    </h5>
+    <p>@item.DepartmentName</p>
+    </div>
+    </li>
+    }
+    else
+    {
+    <li class="media">
+    <div class="media-body text-center">
+    <h6 class="text-muted">
+    Chưa có phòng ban
+    </h6>
+
+    </div>
+    </li>
+    }
+    </ul>
+    </div>
+    </div>
+    @if (Model.GroupUserPermission.IsAddDepartmentAssign > 0)
+    {
+    <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addDepartmentFollow" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartmentFollow('@Model.ContentRequestHeader.RequestID')" data-toggle="modal" data-target="#AddDepartmentFollowQuickModal">Thêm</button></div>
+    }
+    </div>
+    </div>
+    </div>
+
+    <div class="card" style="border-bottom: 1px solid rgba(0,0,0,.1)">
+    <div class="card-header" id="headingThreeicon" style="display: flex; justify-content: space-between;">
+    <h5>Người theo dõi</h5>
+
+
+    <button class="btn btn-primary-rgba" type="button"
+    data-toggle="collapse" data-target="#collapseThreeicon"
+    aria-expanded="true" aria-controls="collapseThreeicon">
+    <i class="feather icon-plus mr-2"></i>Ẩn/Hiện
+    </button>
+
+    </div>
+    <div id="collapseThreeicon" class="collapse show"
+    aria-labelledby="headingThreeicon" data-parent="#accordionwithicon">
+    <div class="card">
+    <div class="chat-list">
+    <div class="chat-user-list">
+    <ul class="list-unstyled mb-0">
+    @if (Model.ListUsersFollow.Count > 0)
+    {
+    @foreach (var item in Model.ListUsersFollow)
+    {
+    <li class="media">
+    <img class="align-self-center rounded-circle"
+    src="~/assets/svg/profile.svg"
+    alt="Generic placeholder image">
+    <div class="media-body">
+    <h5>
+    @item.UserName
+    @if (Model.GroupUserPermission.IsRemoveAssign > 0)
+    {
+    <span class="badge badge-light ml-2 CursorBtn" onclick="DeleteUserFollow('@Model.ContentRequestHeader.RequestID','@item.UserID','@item.UserName')" style="float: right;">X</span>
+    }
+    </h5>
+    <p>@item.FullName / Chức vụ</p>
+    </div>
+    </li>
+    }
+    }
+    else
+    {
+    <li class="media">
+    <div class="media-body text-center">
+    <h6 class="text-muted">
+    Chưa có người theo dõi
+    </h6>
+
+    </div>
+    </li>
+    }
+    </ul>
+    </div>
+    </div>
+    @if (Model.GroupUserPermission.IsAddUserFollow > 0)
+    {
+    <div class="card-footer"><button type="button" class="btn btn-primary btn-lg btn-block requestID_addUserFollow" data-requestid="@Model.ContentRequestHeader.RequestID" onclick="LoadListDepartment_AddUserFollow('@Model.ContentRequestHeader.RequestID')" data-toggle="modal" data-target="#AddUserFollowQuickModal">Thêm</button></div>
+    }
+    </div>
+    </div>
+    </div>*@
+
+<script>
+    function DeleteDepartment(RequestID, DepartmentID, DepartmentName) {
+        swal({
+                title: "Xác nhận !!!",
+            text: "Xác nhận xóa phòng " + DepartmentName + " khỏi danh sách",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("DeleteDepartmentAssign", "RequestAction")' + '?RequestID=' + RequestID + '&Department=' + DepartmentID,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar",false);
+                            //window.location.href = '@Url.Action("RequestContent", "RequestContent")' + '?RequestID=' + RequestID;
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                    if (dismiss === 'cancel') {
+                        swal.dismiss();
+                }
+            });
+    };
+
+    function DeleteUserFollow(RequestID, UserID, UserName) {
+        swal({
+                title: "Xác nhận !!!",
+            text: "Xác nhận xóa " + UserName + " khỏi danh sách",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("DeleteUserFollow", "RequestAction")' + '?RequestID=' + RequestID + '&UserName=' + UserName,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                            //window.location.href = '@Url.Action("RequestContent", "RequestContent")' + '?RequestID=' + RequestID;
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                    if (dismiss === 'cancel') {
+                        swal.dismiss();
+                }
+            });
+    };
+
+    function DeleteDepartmentFollow(RequestID, DepartmentID, DepartmentName) {
+        swal({
+                title: "Xác nhận !!!",
+            text: "Xác nhận xóa phòng " + DepartmentName + " khỏi danh sách",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("DeleteDepartmentFollow", "RequestAction")' + '?RequestID=' + RequestID + '&Department=' + DepartmentID,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                            //window.location.href = '@Url.Action("RequestContent", "RequestContent")' + '?RequestID=' + RequestID;
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                    if (dismiss === 'cancel') {
+                        swal.dismiss();
+                }
+            });
+    };
+        function DeleteUserAssign(RequestID, UserID, UserName, level) {
+        swal({
+                title: "Xác nhận !!!",
+            text: "Xác nhận xóa " + UserName + " khỏi danh sách",
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger m-l-10',
+                cancelButtonText: "Đóng",
+                confirmButtonText: 'Xác nhận'
+            }).then(function () {
+                $.ajax({
+                    url: '@Url.Action("DeleteUserAssign", "RequestAction")' + '?RequestID=' + RequestID + '&UserName=' + UserName + '&level=' + level,
+                    type: 'GET',
+                    success: function (result) {
+                        if (result == "OK") {
+                            AlertForm("Thành công", "success", false, "OK");
+                            loadRequestContent('@Model.ContentRequestHeader.RequestID', "showSildeBar");
+                            //window.location.href = '@Url.Action("RequestContent", "RequestContent")' + '?RequestID=' + RequestID;
+                        } else {
+                            alert("Lỗi");
+                        }
+                    }
+                })
+            }, function (dismiss) {
+                    if (dismiss === 'cancel') {
+                        swal.dismiss();
+                }
+            });
+    };
+
+</script>
+<!-- End row -->
